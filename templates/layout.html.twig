@@ -30,13 +30,13 @@
     <div class="collapse navbar-collapse pe-5" id="main-nav">
         <div class="navbar-nav ms-auto d-flex align-items-center p-4 p-lg-0">
             <a href="{{ path('Accueil')}}" class="nav-item nav-link {% block home %} {% endblock %}">{{ "Accueil"|trans }}</a>
-            <a href="#" class="nav-item nav-link {% block Potabilite %} {% endblock %}">{{ "Potabilite"|trans }}</a>
-            <a href="#" class="nav-item nav-link {% block nap %} {% endblock %}">{{ "Nappe"|trans }}</a>
-            <a href="#" class="nav-item nav-link {% block forage %} {% endblock %}">{{ "Forage"|trans }}</a>
-            <a href="#" class="nav-item nav-link {% block distribution %} {% endblock %}">{{ "Distribution"|trans }}</a>
-            <a href="#" class="nav-item nav-link {% block client %} {% endblock %}">{{ "Clients"|trans }}</a>
+            <a href="{{ path('potabilite')}}" class="nav-item nav-link {% block Potabilite %} {% endblock %}">{{ "Potabilite"|trans }}</a>
+            <a href="{{ path('nappe')}}" class="nav-item nav-link {% block nap %} {% endblock %}">{{ "Nappe"|trans }}</a>
+            <a href="{{ path('forage')}}" class="nav-item nav-link {% block forage %} {% endblock %}">{{ "Forage"|trans }}</a>
+            <a href="{{ path('distribution')}}" class="nav-item nav-link {% block distribution %} {% endblock %}">{{ "Distribution"|trans }}</a>
+            <a href="{{ path('client')}}" class="nav-item nav-link {% block client %} {% endblock %}">{{ "Clients"|trans }}</a>
             <a href="{{ path('About')}}" class="nav-item nav-link {% block about %} {% endblock %}">{{ "A propos"|trans }}</a>
-            <a href="{{ path('Carriere')}}" class="nav-item nav-link {% block faq %} {% endblock %}">{{ "FAQ"|trans }}</a>
+            <a href="{{ path('faq')}}" class="nav-item nav-link {% block faq %} {% endblock %}">{{ "FAQ"|trans }}</a>
             <a href="{{ path('Contact')}}" class="nav-item nav-link {% block contact %} {% endblock %}">{{ "Contact"|trans }}</a>
             <button id="changelang" class="lang-button">
             </button>
