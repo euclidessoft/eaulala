@@ -1,0 +1,127 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Carrières"|trans }}  - Eau là là {% endblock %}
+{% block carriere %}active{% endblock %}
+{% block body %}
+    <!-- Header Start -->
+    <div class="container-fluid py-5 mb-5 page-header">
+        {{ include('gnt/page-header.html.twig') }}
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated zoomIn">
+                        {{ "Carrières"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">
+                                    {{ "Accueil"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                {{ "Carrières"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 wow fadeInRight" data-wow-delay="0.3s">
+                    <nav>
+                        <div class="nav nav-tabs flex-column mt-5 align-items-baseline" id="nav-tab" role="tablist">
+                            <button class="nav-link w-100 active border-top-left-1" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-eco-forage" type="button" role="tab" aria-controls="nav-business" aria-selected="true">
+                                <span class=" fs-4 fw-semibold text-primaire">
+                                    {{ "Culture d'Entreprise"|trans}}
+                                </span>
+                            </button>
+                            <button class="nav-link w-100  border-top-left-1" id="nav-strategy-tab" data-bs-toggle="tab" data-bs-target="#nav-electro-forage" type="button" role="tab" aria-controls="nav-strategy" aria-selected="false">
+                                <a href="{{ path('Carriere_offre') }}">
+                                    <span class="fs-4 fw-semibold text-primaire">
+                                        {{ "Offres d'Emploi"|trans}}
+                                    </span>
+                                </a>
+                            </button>
+                            <button class="nav-link w-100 border-top-left-1" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-eco-puits" type="button" role="tab" aria-controls="nav-video" aria-selected="false">
+                                <a href="{{ path('Carriere_candidature') }}">
+                                    <span class="fs-4 fw-semibold text-primaire">
+                                        {{ "Canditure Spontanée"|trans}}
+                                    </span>
+                                </a>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-9 col-12 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-eco-forage" role="tabpanel" aria-labelledby="nav-intro-tab">
+
+                            <div class="row">
+                                <div class="col-lg-12">
+
+                                    <p class="mb-4 mt-5">
+                                        {{ 'Chez Eau là là, nous croyons fermement que la réussite d\'une entreprise repose sur une culture d\'entreprise solide et sur le bien-être de ses employés.'|trans }}
+                                        {{ 'Notre culture est façonnée par des valeurs fondamentales et une vision commune, créant un environnement de travail dynamique et positif où chaque employé peut s\'épanouir.'|trans }}
+                                        {{ 'Voici un aperçu de notre culture d\'entreprise et des avantages que nous offrons à nos précieux collaborateurs :'|trans }}
+                                    </p>
+                                    <p class="mb-2">
+                                        <b>1. {{ 'Engagement envers l\'Innovation'|trans }}
+                                            :</b> {{ 'Nous encourageons la créativité et l\'innovation à tous les niveaux.'|trans }}
+                                        {{ 'Chaque employé est encouragé à partager ses idées, à poser des questions difficiles et à contribuer à la recherche de solutions novatrices.'|trans }}
+                                        {{ 'Nous valorisons les esprits curieux et visionnaires qui façonnent l\'avenir de la santé.'|trans }}
+                                    </p>
+                                    <p class="mb-2">
+                                        <b>2. {{ 'Collaboration et Esprit d\'Équipe'|trans }}
+                                            :</b> {{ 'Chez Eau là là, nous croyons en la puissance du travail d\'équipe.'|trans }}
+                                        {{ 'Nos projets complexes exigent une collaboration interdisciplinaire, où chaque membre apporte son expertise unique pour atteindre des objectifs communs.'|trans }}
+                                        {{ 'L\'esprit d\'équipe est encouragé à travers des interactions ouvertes, des réunions collaboratives et des initiatives de partage des connaissances.'|trans }}
+                                    </p>
+                                    <p class="mb-2">
+                                        <b>3. {{ 'Développement Professionnel'|trans }}
+                                            :</b> {{ 'Nous investissons dans le développement professionnel de nos employés.'|trans }}
+                                        {{ 'Des opportunités de formation continue, de mentorat et d\'apprentissage sont fournies pour favoriser la croissance individuelle.'|trans }}
+                                        {{ 'Nous soutenons les ambitions de carrière de nos employés en les aidant à acquérir de nouvelles compétences et à atteindre leurs objectifs professionnels.'|trans }}
+                                    </p>
+                                    <p class="mb-2">
+                                        <b>4. {{ 'Environnement Inclusif'|trans }}
+                                            :</b> {{ 'La diversité est célébrée et encouragée. Nous croyons que des équipes diversifiées sont plus créatives et innovantes.'|trans }}
+                                        {{ 'Nous nous engageons à créer un environnement de travail inclusif où chacun se sent respecté, valorisé et capable de contribuer pleinement, indépendamment de ses origines, de son genre ou de son orientation.'|trans }}
+                                        <br><br>
+                                        <b>5. {{ 'Équilibre Travail-Vie Personnelle'|trans }}
+                                            :</b> {{ 'Nous reconnaissons l\'importance d\'un équilibre sain entre le travail et la vie personnelle.'|trans }}
+                                        {{ 'Nous offrons des politiques de travail flexibles, des congés payés, et d\'autres avantages pour permettre à nos employés de gérer efficacement leurs responsabilités professionnelles et personnelles.'|trans }}
+                                    </p>
+                                    <p class="mb-2">
+                                        <b>6. {{ 'Avantages Compréhensifs'|trans }}
+                                            :</b> {{ 'Nous valorisons nos employés et c\'est pourquoi nous offrons des avantages complets, des programmes de bien-être, des opportunités de développement de carrière, et plus encore.'|trans }}
+                                        {{ 'Nous sommes déterminés à soutenir la santé et le bien-être de nos employés à chaque étape de leur parcours.'|trans }}
+                                    </p>
+                                    <p class="mb-2">
+                                        <b>7. {{ 'Impact Positif'|trans }}
+                                            :</b> {{ 'Travailler chez Eau là là signifie contribuer à un impact globalement positif sur la santé de la société.'|trans }}
+                                        {{ 'Chaque employé est conscient de l\'importance de son rôle dans la création de solutions médicales qui changent la vie des gens.'|trans }}
+                                        {{ 'Cet engagement envers un but supérieur motive et inspire notre équipe chaque jour.'|trans }}
+                                    </p>
+                                    <p class="mt-4">
+                                        {{ 'Rejoindre Eau là là, c\'est rejoindre une communauté de professionnels passionnés, déterminés à redéfinir l\'avenir de la santé.'|trans }}
+                                        {{ 'Si vous recherchez un environnement stimulant, un soutien au développement professionnel et la possibilité de faire une réelle différence, Eau là là est l\'endroit où vous pourrez réaliser votre plein potentiel.'|trans }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                       </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- About End -->
+{% endblock %}
