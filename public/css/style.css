@@ -460,6 +460,68 @@ b{
 .gallery-img-largeV {
     aspect-ratio: 1 / 2.08;
 }
+/*debut client*/
+.bordure {
+    border-top: 5px solid var(--primaire);
+    border-right: 5px solid var(--primaire);
+}
+.shadow{
+    color: var(--noir);
+    background: rgba(255,255,255,0.8); !important;
+  }
+/*fin client*/
+/* Debut FAQ*/
+
+.btn-order {
+    color: var(--noir);
+    border-color: var(--primaire);
+    transition: 0.5s;
+
+
+}
+
+
+.btn-order:hover,
+.btn-order:active {
+    color: var(--secondaire);
+    background-color: var(--primaire);
+
+}
+
+.faq-banner {
+    width: 100%;
+    aspect-ratio: 740 / 493;
+    background-image: url(../images/potable4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanc);
+}
+
+/*fin FAQ*/
+/* debut distribution*/
+.bordure-distribution {
+    border-bottom: 5px solid var(--primaire);
+    border-left: 5px solid var(--primaire);
+}
+
+.distribution-banner {
+    width: 100%;
+    aspect-ratio: 740 / 493;
+    background-image: url(../images/potable3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanc);
+}
+
+/* fin distribution */
 
 /**************fin galerie**********************/
 
