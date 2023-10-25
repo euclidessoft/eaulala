@@ -1,0 +1,206 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ "Carrières"|trans }}  - Eau là là {% endblock %}
+{% block carriere %}active{% endblock %}
+{% block body %}
+    <!-- Header Start -->
+    <div class="container-fluid py-5  page-header">
+        {{ include('gnt/page-header.html.twig') }}
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated fadeIn">
+                        {{ "FAQ"|trans }}
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item">
+                                <a class="text-white" href="{{ path('Accueil') }}">
+                                    {{ "Accueil"|trans }}
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-white">
+                                {{ "FAQ"|trans }}
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid faq-banner p-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center text-black"><strong>FAQ</strong></h2>
+                <br>
+                <h1 class="text-center text-black"><strong>Foire aux questions</strong></h1>
+                <br>
+                <p class="text-center mb-5 text-black"><strong>Réponses a interrogations courantes que vous pouvez avoir</strong></p>
+                <br>
+
+            </div>
+            <div class="col-lg-6 ">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed btn-order" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                Qu'est-ce qu'EAULALA et quelle est sa mission principale ?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>EAULALA est une entreprise engagée dans la fourniture d'eau potable de qualité
+                                    supérieure de manière durable et responsable. Notre mission principale est de
+                                    répondre aux besoins en eau potable tout en minimisant notre impact sur
+                                    l'environnement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed btn-order" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                Comment EAULALA garantit-elle la qualité de son eau potable ?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p> Nous utilisons des technologies avancées de purification de l'eau et nous nous
+                                    conformons aux normes les plus strictes pour garantir la qualité de notre eau. Des
+                                    contrôles réguliers sont effectués pour s'assurer de la pureté de l'eau que nous
+                                    fournissons.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed btn-order" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                En quoi consiste l'engagement de durabilité environnementale d'EAULALA ?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>EAULALA s'engage à réduire son empreinte environnementale en adoptant des pratiques
+                                    durables telles que la gestion efficace de l'eau et la réduction des déchets. Nous
+                                    cherchons à minimiser notre impact sur la planète.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed btn-order" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapsefor" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapsefor">
+                                Comment EAULALA réagit-elle en cas de catastrophes naturelles ou de crises liées à l'eau
+                                ?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsefor" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                <p>Nous avons des protocoles d'intervention d'urgence bien établis pour réagir
+                                    rapidement en cas de crises. Notre objectif est de fournir de l'eau potable aux
+                                    communautés touchées et d'aider à soulager les situations de crise.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-lg-6 ">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed btn-order" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapsefive">
+                                Comment puis-je contribuer à la mission d'EAULALA en tant que client ?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>
+                                    En choisissant EAULALA, vous soutenez notre mission humaniste. Vous pouvez également
+                                    participer à nos campagnes de sensibilisation, aider à économiser l'eau et être
+                                    conscient de l'importance de la conservation de l'eau.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed btn-order" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapsesix">
+                                Où puis-je trouver des informations sur les performances sociales et environnementales
+                                d'EAULALA ?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>
+                                    Vous pouvez trouver des informations transparentes sur nos performances sur notre
+                                    site web. Nous publions régulièrement des rapports sur nos actions sociales et
+                                    environnementales pour que nos clients soient informés.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed btn-order" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseseven" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseseven">
+                                Comment EAULALA utilise-t-elle ses bénéfices pour des projets de développement durable ?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>Une partie de nos bénéfices est réinvestie dans des projets visant à améliorer
+                                    l'accès à l'eau potable dans les régions défavorisées. En tant que client, vous
+                                    contribuez indirectement à ces initiatives.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed btn-order" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseheight" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseheight">
+                                Comment puis-je contacter EAULALA en cas de questions supplémentaires ou de besoins
+                                spécifiques ?
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseheight" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                <p>Vous pouvez nous contacter via notre site web ou en utilisant les coordonnées
+                                    fournies sur la page de contact. Notre équipe est là pour répondre à toutes vos
+                                    questions et préoccupations.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- About End -->
+{% endblock %}
