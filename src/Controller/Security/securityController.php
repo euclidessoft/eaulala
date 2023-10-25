@@ -45,15 +45,15 @@ class securityController extends AbstractController
     }
 
     /**
-     * @Route("/Logistique", name="Logistique")
+     * @Route("/potabilite", name="potabilite")
      */
-    public function planning(Request $request)
+    public function potabilit(Request $request)
     {
-        return  $this->render('gnt/logistique.html.twig');
+        return  $this->render('gnt/potabilite.html.twig');
     }
 
     /**
-     * @Route("/Distribution", name="Distribution")
+     * @Route("/Distribution", name="distribution")
      */
     public function improve(Request $request)
     {
@@ -61,19 +61,35 @@ class securityController extends AbstractController
     }
 
     /**
-     * @Route("/Promotion", name="Promotion")
+     * @Route("/nappe", name="nappe")
      */
-    public function securite(Request $request)
+    public function nappe(Request $request)
     {
-        return  $this->render('gnt/promotion.html.twig');
+        return  $this->render('gnt/nappe.html.twig');
     }
 
     /**
-     * @Route("/Actualite", name="Actualite")
+     * @Route("/Forage", name="forage")
      */
-    public function actualite(Request $request)
+    public function forage(Request $request)
     {
-        return  $this->render('gnt/actualite.html.twig');
+        return  $this->render('gnt/forage.html.twig');
+    }
+
+    /**
+     * @Route("/Client", name="client")
+     */
+    public function client(Request $request)
+    {
+        return  $this->render('gnt/client.html.twig');
+    }
+
+    /**
+     * @Route("/Faq", name="faq")
+     */
+    public function faq(Request $request)
+    {
+        return  $this->render('gnt/faq.html.twig');
     }
 
     /**
