@@ -112,6 +112,9 @@
     display: flex;
     align-items: center;
 }
+b{
+    color: var(--primaire);
+}
 
 .header-carousel .carousel-control {
     position: absolute;
