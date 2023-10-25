@@ -1,0 +1,81 @@
+{% extends 'layout.html.twig' %}
+
+{% block nappe %}active{% endblock %}
+
+{% block body %}
+    <div class="container-fluid py-4">
+        <div class="container my-5">
+            <div class="row g-4">
+
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+
+                    <div class="p-4 h-100  bg-white shadow border-y-1">
+                        <h2 class="section-title bg-white text-lg-start mb-3">
+                            {{ "Nappe d'eau potable"|trans }}
+                        </h2>
+                        <p class="fs-5 mb-4">
+                            {{"Chez Eau LA LA nous disposons d'"|trans}}<b>{{ "appareils de détection de nappe d'eau potable"|trans}}</b> {{ " équipés de capteurs sophistiqués qui vont "|trans}}<b> {{ " jusqu'a 1 500 a 3 000 metres de profondeur a la recherche d'eau potable."|trans}}</b><br>
+                            {{ "Ainsi nos appariels ne"|trans}} <b>{{ "se limitent pas a la nappe phreatique et  vont jusqu'a la nappe equifere pour trouver de l'eau potable"|trans}}</b>  <br>
+                            {{"Notre entreprise utilise des"|trans}} <b>{{ "techniques de pointe pour cartographier et identifier les nappes d'eau potable"|trans}}</b>, {{ "garantissant ainsi un approvisionnement en"|trans}} <b>{{ " eau fiable et durable"|trans}} </b>{{ "pour une variété d'applications."|trans}}
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInLeft text-center" data-wow-delay="0.3s">
+                    <div class="h-100">
+                        <img class="w-100 shadow h-100 border-x-1 fit-cover"
+                             src="{{ asset('images/galerie/2.jpg') }}" alt="nappe d'eau potable">
+                    </div>
+
+                </div>
+            </div>
+            <div class="row g-4 my-5">
+
+
+
+                <div class="col-lg-12 wow fadeInRight" data-wow-delay="0.3s">
+
+                    <div class="p-4 h-100  bg-white shadow border-y-1">
+                        <h6 class="fs-2 mb-4">
+                            Nos appareils vont dans la recherche d'eau potable jusqu'au nappe acquifere beaucoup plus profonde que la nappe phreatique souvent polluee.
+                        </h6>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 my-5">
+
+
+
+                <div class="col-lg-12 wow fadeInRight" data-wow-delay="0.3s">
+
+                    <div class="p-4 h-100  bg-white shadow border-y-1">
+                        <h2 class="section-title bg-white text-lg-start mb-3">
+                            {{ "identification des nappes d'eau"|trans }}
+                        </h2>
+
+                        1. **Profondeur** : nos appareil peuvent aller pour rechercher de l'eau souterraine jusqu'à une profondeur de 1 500 mètres sous la surface de la terre.<br>
+
+                        2. **Portée frontale** : Ils scannent une zone allant jusqu'à 3 000 mètres carrés à partir de son emplacement actuel pour détecter les caractéristiques de l'eau souterraine dans la zone.<br>
+
+                        3. **Détermination précise du type d'eau** : L'appareil peut identifier avec une grande précision le type d'eau présente sous le sol, qu'il s'agisse d'eau douce, d'eau salée ou d'eau très salée.
+
+                        4. **Choix du continent et du pays** : L'utilisateur peut sélectionner le continent et le pays où il souhaite rechercher de l'eau souterraine. Cela permet une personnalisation en fonction de l'emplacement géographique de l'opération.
+
+                        5. **Travail mondial sur différents terrains** : L'appareil peut être utilisé n'importe où dans le monde et sur divers types de sols, y compris les sols rocheux, naturels, mixtes, minéralisés, argilo-sableux, etc.
+
+                        6. **Affichage du pourcentage de roches** : L'appareil est capable de montrer la proportion de roches dans la zone de numérisation du sol. Cela peut être utile pour évaluer la composition du sol et la probabilité de trouver de l'eau.
+
+                        7. **Image tridimensionnelle de haute qualité** : L'appareil génère une représentation en 3D de la localisation de l'eau et des rochers dans la zone de recherche d'eau. Cela permet aux utilisateurs de visualiser plus clairement les caractéristiques du sous-sol.
+
+                        8. **Détermination de la profondeur des eaux souterraines** : En plus de localiser l'eau, l'appareil peut également estimer la profondeur à laquelle se trouve l'eau souterraine.
+
+                        9. **Technologie avancée pour détecter et identifier les sources d'eau souterraines** : L'appareil utilise une technologie sophistiquée pour repérer et caractériser les sources d'eau souterraine, ce qui peut être précieux pour la recherche d'eau dans des contextes divers.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
