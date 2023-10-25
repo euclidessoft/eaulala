@@ -25,6 +25,7 @@
     --instagram: #e83e8c; /*  rgb(232, 62, 140)  */
     --youtube: #ff0000; /*  rgb(232, 62, 140)  */
     --duree: 2000ms;
+    --bs-border-radius: 0;
 }
 
 * {
@@ -500,7 +501,15 @@ b{
     justify-content: center;
     color: var(--blanc);
 }
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+}
 
+.accordion-button:not(.collapsed) {
+    color: var(--secondaire);
+    background-color: var(--primaire);
+}
 /*fin FAQ*/
 /* debut distribution*/
 .bordure-distribution {
