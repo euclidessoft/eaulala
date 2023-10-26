@@ -994,7 +994,7 @@ b {
     font-weight: bold;
     color: var(--secondaire);
     margin-bottom: 2rem !important;
-    border-bottom: 5px solid var(--secondaire);
+    border-bottom: 3px solid var(--secondaire);
 }
 
 .footer-tittle::after {
@@ -1002,7 +1002,7 @@ b {
     content: "\f043";
     font-family: "Font Awesome 6 Free", sans-serif;
     top: 50px;
-    right: 17px;
+    right: 18px;
     font-size: 15px;
 }
 
