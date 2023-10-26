@@ -41,11 +41,18 @@
 
     // Back to top button
     $(window).scroll(function () {
+        var backtop = $('.back-to-top');
         if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
+            backtop.fadeIn('fast');
+            backtop.css('display', 'flex');
         } else {
-            $('.back-to-top').fadeOut('slow');
+            backtop.fadeOut('fast');
+            backtop.css('display', 'flex');
         }
+    });
+    $('.back-to-top').click(function () {
+        $('#').animate({scrollTop: 0}, 150, 'easeInOutExpo');
+        return false;
     });
 
     // Change lang
