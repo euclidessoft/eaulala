@@ -682,9 +682,9 @@ b{
     font-weight: 700 !important;
 }
 
-.back-to-top {
+/*.back-to-top {
     display: flex;
-}
+}*/
 
 .back-to-top {
     border-radius: 0 !important;
@@ -1040,7 +1040,7 @@ b{
 }
 
 .copyright {
-    border-top: 2px solid var(--blanc) !important;
+    border-top: 2px solid var(--secondaire) !important;
     background-color: var(--primaire);
 }
 
@@ -1055,7 +1055,7 @@ b{
     height: 100%;
     top: 0;
     left: -40px;
-    background: var(--blanc);
+    background: var(--secondaire);
     transform: skew(40deg);
 }
 
@@ -1120,8 +1120,12 @@ a {
     background: rgba(255, 255, 255, 0.8);
 }
 
-.form-control {
+.contact-form .form-control {
     border: 1px solid var(--primaire) !important;
+}
+
+.contact-form button {
+    border-radius: 0;
 }
 
 .form-control:focus {
@@ -1131,10 +1135,6 @@ a {
 
 textarea.form-control {
     height: 200px !important;
-}
-
-.contact-form button {
-    border-radius: 10px;
 }
 
 .lang-button {
