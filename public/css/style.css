@@ -86,10 +86,6 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 }
 
 /********** Header carousel **********/
-.page-header,
-.header-carousel {
-    margin-top: -84px;
-}
 
 .carousel-img {
     width: 100%;
