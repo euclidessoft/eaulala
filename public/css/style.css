@@ -243,6 +243,19 @@ b {
     border-left: 3px solid var(--primaire) !important;
     border-right: 3px solid var(--primaire) !important;
 }
+.border1 {
+    border-top: 3px solid var(--primaire) !important;
+    border-left: 3px solid var(--primaire) !important;
+   }
+.border2 {
+    border-top: 3px solid var(--primaire) !important;
+    border-right: 3px solid var(--primaire) !important;
+   }
+.border3 {
+    border-left: 3px solid var(--primaire) !important;
+    border-right: 3px solid var(--primaire) !important;
+    border-bottom: 3px solid var(--primaire) !important;
+   }
 
 .border-top-left-1 {
     border-left: 1px solid var(--primaire) !important;
