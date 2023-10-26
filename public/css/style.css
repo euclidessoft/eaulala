@@ -748,20 +748,23 @@ b{
 }
 
 .btn-light {
-    background: var(--blanc) !important;
+    background: var(--secondaire) !important;
     color: var(--primaire) !important;
     padding: 1rem !important;
 }
 
 .btn-light:hover {
-    border: 1px solid var(--primaire);
+    border: 2px solid var(--secondaire)!important;
+    background: transparent !important;
+    color: var(--secondaire) !important;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.5);
 }
 
 .btn-primaire:hover {
     background: var(--blanc) !important;
-    color: var(--primaire) !important;
+    color: var(--blanc) !important;
     /*padding: 1rem !important;*/
-    border: 1px solid var(--primaire);
+    border: 1px solid var(--blanc) !important;
 }
 
 .btn-primaire.btn-effect:after {
