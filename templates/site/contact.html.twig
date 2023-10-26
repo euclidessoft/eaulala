@@ -2,30 +2,7 @@
 {% block title %} {{ "Contactez-nous"|trans }} - Eau là là {% endblock %}
 {% block contact %}active{% endblock %}
 {% block body %}
-    <div class="container-fluid py-5 page-header">
-        {{ include('site/page-header.html.twig') }}
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated fadeIn">
-                        {{ 'Contactez-nous'|trans }}
-                    </h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item">
-                                <a class="text-white" href="{{ path('Accueil') }}">
-                                    {{ "Accueil"|trans }}
-                                </a>
-                            </li>
-                            <li class="breadcrumb-item text-white">
-                                {{ 'Contactez-nous'|trans }}
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="container-fluid mb-5 py-5">
         <div class="container">
             {% for message in app.flashes('notice') %}

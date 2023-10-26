@@ -207,8 +207,8 @@ b{
 }
 
 .border-y-1 {
-    border-top: 1px solid var(--primaire) !important;
-    border-bottom: 1px solid var(--primaire) !important;
+    border-right: 1px solid var(--primaire) !important;
+    border-left: 1px solid var(--primaire) !important;
 }
 
 .border-x-1 {
