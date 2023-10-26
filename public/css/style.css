@@ -730,10 +730,10 @@ b {
     font-weight: bold;
     font-size: 2rem;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     background: var(--primaire);
-    color: var(--blanc);
-    border: 1px solid var(--blanc);
+    color: var(--secondaire);
+    border: 1px solid var(--secondaire);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     transition: all ease 300ms;
     z-index: 99;
@@ -741,7 +741,7 @@ b {
 }
 
 .back-to-top:hover {
-    background: var(--blanc);
+    background: var(--secondaire);
     border: 1px solid var(--primaire);
     color: var(--primaire);
 }
