@@ -778,25 +778,34 @@ b {
 .btn-primaire {
     background: var(--primaire) !important;
     color: var(--secondaire) !important;
-    padding: 1rem !important;
 }
 
 .btn-primaire:hover {
     background: transparent !important;
     color: var(--primaire) !important;
-    border: 1px solid var(--primaire) !important;
+    border: 2px solid var(--primaire) !important;
 }
 
 .btn-secondaire {
     background: var(--secondaire) !important;
     color: var(--primaire) !important;
-    padding: 1rem !important;
 }
 
 .btn-secondaire:hover {
     background: transparent !important;
     color: var(--secondaire) !important;
-    border: 1px solid var(--secondaire) !important;
+    border: 2px solid var(--secondaire) !important;
+}
+
+.btn-primaire,
+.btn-secondaire {
+    border: 2px solid transparent !important;
+    padding: 1rem !important;
+}
+
+.btn-primaire:hover,
+.btn-secondaire:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -840,6 +849,7 @@ b {
     font-weight: 600;
     transition: all 200ms ease-in-out;
     border-bottom: 5px solid transparent;
+    white-space: nowrap;
 }
 
 .navbar-nav .nav-link:focus {
@@ -1164,7 +1174,7 @@ textarea.form-control {
 .socialink:hover .socialink-instagram,
 .socialink:hover .socialink-youtube,
 .socialink:hover .socialink-linkedin {
-    width: calc(100% - 45px);
+    width: calc(100% - 70px);
     opacity: 1;
 }
 
