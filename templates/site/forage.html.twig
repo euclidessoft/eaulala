@@ -1,70 +1,7 @@
 {% extends 'layout.html.twig' %}
 {% block title %} {{ "Forage"|trans }}  - Eau là là {% endblock %}
 {% block forage %}active{% endblock %}
+
 {% block body %}
-    <!-- Header Start -->
-    <div class="container-fluid py-5  page-header">
-        {{ include('site/page-header.html.twig') }}
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated fadeIn">
-                        {{ "Forage"|trans }}
-                    </h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item">
-                                <a class="text-white" href="{{ path('Accueil') }}">
-                                    {{ "Accueil"|trans }}
-                                </a>
-                            </li>
-                            <li class="breadcrumb-item text-white">
-                                {{ "Forage"|trans }}
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
 
-
-    <div class="container-fluid  distribution-banner pb-4">
-        <div class="container fs-5 mb-5 mt-5">
-            <div class="row ">
-
-                <div class="col-lg-6 col-md-6   wow fadeInRight shadow   bordure-distribution"
-                     data-wow-delay="0.1s">
-                    <h1 class="mt-5 text-center">{{ 'Distribution'|trans }} </h1>
-
-
-
-                    <p class="mb-4 mt-5">
-
-                        {{ "Dans un monde en constante évolution, marqué par des défis environnementaux croissants et des problèmes sociaux en constante mutation, il est impératif de reconnaître que l'accès à l'eau potable constitue un besoin fondamental, inaliénable pour chaque être humain. L'eau est le socle de la vie, une ressource qui transcende les frontières et qui est au cœur de la survie de notre planète et de ses habitants."|trans }}
-
-                    </p>
-                    <p class="mb-4">
-
-                        {{ "Au sein de ce contexte complexe, l'entreprise EAULALA a pris sur elle la mission cruciale de secourir les populations en leur fournissant une eau potable de qualité supérieure, et ce, d'une manière qui soit à la fois durable et responsable. Notre engagement envers cette mission repose sur une compréhension profonde de l'eau en tant que bien universel et vital. Nous percevons l'eau comme bien plus qu'une simple ressource. Elle est la source de la vie, la base de la santé, l'élément clé du bien-être et le vecteur de progrès pour les sociétés et les écosystèmes."|trans }}
-                    </p>
-                    <p class="mb-4">
-
-                        {{ "Notre engagement envers la préservation de cette ressource précieuse imprègne chacune de nos actions. Dès la purification de l'eau, où nous utilisons des technologies avancées pour garantir une qualité irréprochable, jusqu'à la sensibilisation du public sur l'importance cruciale de la conservation de l'eau, EAULALA s'inscrit dans une démarche globale de protection de l'environnement et de responsabilité sociale."|trans }}
-                    </p>
-
-
-
-                </div>
-
-
-
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- About End -->
 {% endblock %}
