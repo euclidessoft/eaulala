@@ -868,8 +868,8 @@ b{
     margin-left: 8px;
 }
 
-.navbar-light .nav-item .nav-link,
-.navbar-light .navbar-nav .nav-link {
+.nav-item .nav-link,
+.navbar-nav .nav-link {
     margin: 0 15px;
     padding: 25px 0;
     font-size: 18px;
@@ -881,18 +881,19 @@ b{
     border-bottom: 5px solid transparent;
 }
 
-.navbar-light .navbar-nav .nav-link:focus {
-    color: var(--blanc);
+.navbar-nav .nav-link:focus {
+    background-color: rgba(var(--primaire-rgb), 0.1);
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-    color: var(--blanc);
-    border-bottom: 5px solid var(--secondaire);
+.navbar-nav .nav-link:hover {
+    /*border-bottom: 5px solid var(--secondaire);*/
+    background-color: rgba(var(--primaire-rgb), 0.1);
 }
 
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--blanc);
+.navbar-nav .nav-link.active {
     border-bottom: 5px solid var(--primaire);
+    background-color: rgba(var(--primaire-rgb), 0.1);
+    font-weight: bold;
 }
 
 .sticky-top {
@@ -903,7 +904,7 @@ b{
 }
 
 .logo {
-    height: 50px;
+    height: 70px;
 }
 
 .page-header h1 {
@@ -1244,17 +1245,17 @@ textarea.form-control {
 
 @media (max-width: 768px) {
 
-    .navbar-light .navbar-toggler {
+    .navbar-toggler {
         color: var(--primaire);
         line-height: 1.5;
     }
 
-    .navbar-light .navbar-nav .nav-link.active {
+    .navbar-nav .nav-link.active {
         color: var(--secondaire);
         border-bottom: 5px solid var(--primaire);
     }
 
-    .navbar-light .navbar-nav .nav-link {
+    .navbar-nav .nav-link {
         color: var(--primaire);
     }
 
@@ -1299,20 +1300,20 @@ textarea.form-control {
         opacity: 1;
     }
 
-    .navbar-light .navbar-toggler {
+    .navbar-toggler {
         color: var(--primaire) !important;
     }
 
-    .navbar-light .navbar-nav .nav-link.active {
+    .navbar-nav .nav-link.active {
         color: var(--secondaire);
         border-bottom: 5px solid var(--primaire);
     }
 
-    .navbar-light .navbar-nav .nav-link {
+    .navbar-nav .nav-link {
         color: var(--primaire);
     }
 
-    .navbar-light.sticky-top {
+    .sticky-top {
         top: 0 !important;
     }
 
@@ -1351,8 +1352,8 @@ textarea.form-control {
         aspect-ratio: 1 / 1;
     }
 
-    .navbar-light.sticky-top {
-        background-color: var(--blanc);
+    .sticky-top {
+        background-color: var(--secondaire);
         top: 0;
     }
 }

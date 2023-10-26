@@ -10,7 +10,7 @@
     new WOW().init();
 
     // Sticky Navbar
-    $(window).scroll(function () {
+    /*$(window).scroll(function () {
         let menu = $('.sticky-top');
         let activelink = $('.navbar-light .navbar-nav .nav-link.active');
         if ($(this).scrollTop() > 150) {
@@ -37,7 +37,7 @@
                 activelink.css('color', 'var(--blanc)');
             }
         }
-    });
+    });*/
 
     // Back to top button
     $(window).scroll(function () {
