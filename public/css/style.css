@@ -34,6 +34,13 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+
+}
+
+svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    box-sizing: content-box;
+    margin-left: 8px;
 }
 
 .loader {
@@ -537,7 +544,7 @@ b {
 .distribution-banner {
     width: 100%;
     aspect-ratio: 740 / 493;
-    background-image: url(../images/potable3.jpg);
+    background-image: url(../images/distribution.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
