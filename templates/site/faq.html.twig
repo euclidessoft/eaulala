@@ -3,41 +3,19 @@
 {% block faq %}active{% endblock %}
 {% block body %}
     <!-- Header Start -->
-    <div class="container-fluid py-5  page-header">
-        {{ include('site/page-header.html.twig') }}
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated fadeIn">
-                        {{ "FAQ"|trans }}
-                    </h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item">
-                                <a class="text-white" href="{{ path('Accueil') }}">
-                                    {{ "Accueil"|trans }}
-                                </a>
-                            </li>
-                            <li class="breadcrumb-item text-white">
-                                {{ "FAQ"|trans }}
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <div class="container-fluid faq-banner p-5">
         <div class="row">
             <div class="col-lg-12">
+
                 <h1 class="text-center text-black">
                     <strong>
                         {{ "Foire aux questions"|trans }}
                     </strong>
                 </h1>
                 <br>
-                <p class="text-center mb-5 text-black"><strong>Réponses aux interrogations courantes que vous pouvez
+                <p class="text-center  text-black"><strong>Réponses aux interrogations courantes que vous pouvez
                         avoir</strong></p>
                 <br>
 

@@ -500,7 +500,7 @@ b {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    display: flex;
+
     align-items: center;
     justify-content: center;
     color: var(--blanc);
@@ -514,6 +514,18 @@ b {
     color: var(--secondaire);
     background-color: var(--primaire);
 }
+
+.accordion-button {
+    border: 1px solid var(--primaire)!important;
+
+
+}
+
+/*.accordion-button::after {
+    color: var(--primaire) !important;
+}*/
+
+
 /********** Fin FAQ **********/
 
 /********** Debut distribution **********/
