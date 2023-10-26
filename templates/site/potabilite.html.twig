@@ -1,5 +1,5 @@
 {% extends 'layout.html.twig' %}
-
+{% block title %} {{ "Potabilité"|trans }}  - Eau là là {% endblock %}
 {% block potabilite %}active{% endblock %}
 
 {% block body %}
@@ -10,12 +10,12 @@
                     <div class="bg-blanc-8 p-5 shadow border-x-3 fs-5">
 
                         <h3 class="text-center mb-5">
-                            {{ "Potabilite"|trans }}
+                            {{ "Potabilité"|trans }}
 
                         </h3>
 
                         <p>
-                            {{ "Eaulala effectue"|trans }}
+                            {{ "Eau la la effectue"|trans }}
                             <b> {{ "des tests de potabilité de l'eau,"|trans }}</b>
                             {{ "offrant ainsi des services de pointe pour garantir la"|trans}} <b>{{ "qualité et la sécurité de l'eau potable"|trans }}</b>.
                             {{ "Grâce à notre expertise et à notre engagement envers la santé publique, nous fournissons des solutions de contrôle de la"|trans }} <b>{{ "qualité de l'eau"|trans }}</b> {{ "essentielles pour les collectivités, les entreprises et les particuliers."|trans }}

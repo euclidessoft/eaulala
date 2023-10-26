@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Eaulala - L’eau potable pour tous</title>
+    <title>{% block title %} Eaulala - L’eau potable pour tous {% endblock %}</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" rel="stylesheet">
@@ -16,6 +16,7 @@
 
 </head>
 <body>
+
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-secondaire navbar-light sticky-top p-0">
     <a href="{{ path('Accueil')}}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
@@ -26,15 +27,15 @@
     </button>
     <div class="collapse navbar-collapse pe-5" id="main-nav">
         <div class="navbar-nav ms-auto d-flex align-items-center p-4 p-lg-0">
-            <a href="{{ path('Accueil')}}" class="nav-item nav-link {% block home %} {% endblock %}">{{ "Accueil"|trans }}</a>
-            <a href="{{ path('potabilite')}}" class="nav-item nav-link {% block Potabilite %} {% endblock %}">{{ "Potabilite"|trans }}</a>
-            <a href="{{ path('nappe')}}" class="nav-item nav-link {% block nap %} {% endblock %}">{{ "Nappe"|trans }}</a>
-            <a href="{{ path('forage')}}" class="nav-item nav-link {% block forage %} {% endblock %}">{{ "Forage"|trans }}</a>
-            <a href="{{ path('distribution')}}" class="nav-item nav-link {% block distribution %} {% endblock %}">{{ "Distribution"|trans }}</a>
-            <a href="{{ path('client')}}" class="nav-item nav-link {% block client %} {% endblock %}">{{ "Clients"|trans }}</a>
-            <a href="{{ path('About')}}" class="nav-item nav-link {% block about %} {% endblock %}">{{ "A propos"|trans }}</a>
-            <a href="{{ path('faq')}}" class="nav-item nav-link {% block faq %} {% endblock %}">{{ "FAQ"|trans }}</a>
-            <a href="{{ path('Contact')}}" class="nav-item nav-link {% block contact %} {% endblock %}">{{ "Contact"|trans }}</a>
+            <a href="{{ path('Accueil') }}" class="nav-item nav-link {% block home %} {% endblock %}">{{ "Accueil"|trans }}</a>
+            <a href="{{ path('Potabilite') }}" class="nav-item nav-link {% block potabilite %} {% endblock %}">{{ "Potabilité"|trans }}</a>
+            <a href="{{ path('Nappe') }}" class="nav-item nav-link {% block nappe %} {% endblock %}">{{ "Nappe"|trans }}</a>
+            <a href="{{ path('Forage') }}" class="nav-item nav-link {% block forage %} {% endblock %}">{{ "Forage"|trans }}</a>
+            <a href="{{ path('Distribution') }}" class="nav-item nav-link {% block distribution %} {% endblock %}">{{ "Distribution"|trans }}</a>
+            <a href="{{ path('Client') }}" class="nav-item nav-link {% block client %} {% endblock %}">{{ "Clients"|trans }}</a>
+            <a href="{{ path('Faq') }}" class="nav-item nav-link {% block faq %} {% endblock %}">{{ "FAQ"|trans }}</a>
+            <a href="{{ path('About') }}" class="nav-item nav-link {% block about %} {% endblock %}">{{ "A propos"|trans }}</a>
+            <a href="{{ path('Contact') }}" class="nav-item nav-link {% block contact %} {% endblock %}">{{ "Contact"|trans }}</a>
             <button id="changelang" class="lang-button">
             </button>
         </div>

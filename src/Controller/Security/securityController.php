@@ -34,66 +34,66 @@ class securityController extends AbstractController
      */
     public function accueil(Request $request)
     {
-       return  $this->render('gnt/accueil.html.twig');
+       return  $this->render('site/accueil.html.twig');
     }
     /**
-     * @Route("/About", name="About")
+     * @Route("/about", name="About")
      */
     public function about(Request $request)
     {
-        return  $this->render('gnt/about.html.twig');
+        return  $this->render('site/about.html.twig');
     }
 
     /**
-     * @Route("/potabilite", name="potabilite")
+     * @Route("/potabilite", name="Potabilite")
      */
-    public function potabilit(Request $request)
+    public function potabilite(Request $request)
     {
-        return  $this->render('gnt/potabilite.html.twig');
+        return  $this->render('site/potabilite.html.twig');
     }
 
     /**
-     * @Route("/Distribution", name="distribution")
+     * @Route("/distribution", name="Distribution")
      */
-    public function improve(Request $request)
+    public function distribution(Request $request)
     {
-        return  $this->render('gnt/distribution.html.twig');
+        return  $this->render('site/distribution.html.twig');
     }
 
     /**
-     * @Route("/nappe", name="nappe")
+     * @Route("/nappe", name="Nappe")
      */
     public function nappe(Request $request)
     {
-        return  $this->render('gnt/nappe.html.twig');
+        return  $this->render('site/nappe.html.twig');
     }
 
     /**
-     * @Route("/Forage", name="forage")
+     * @Route("/forage", name="Forage")
      */
     public function forage(Request $request)
     {
-        return  $this->render('gnt/forage.html.twig');
+        return  $this->render('site/forage.html.twig');
     }
 
     /**
-     * @Route("/Client", name="client")
+     * @Route("/client", name="Client")
      */
     public function client(Request $request)
     {
-        return  $this->render('gnt/client.html.twig');
+        return  $this->render('site/client.html.twig');
     }
 
     /**
-     * @Route("/Faq", name="faq")
+     * @Route("/faq", name="Faq")
      */
     public function faq(Request $request)
     {
-        return  $this->render('gnt/faq.html.twig');
+        return  $this->render('site/faq.html.twig');
     }
 
     /**
-     * @Route("/Contact", name="Contact")
+     * @Route("/contact", name="Contact")
      */
     public function contact(Request $request)
     {
@@ -111,22 +111,22 @@ class securityController extends AbstractController
                 return $this->redirectToRoute('Contact');
             }
         }
-        return  $this->render('gnt/contact.html.twig',
+        return  $this->render('site/contact.html.twig',
             [
                 'form' => $form->createView(),
             ]);
     }
 
     /**
-     * @Route("/Produits", name="Produits")
+     * @Route("/produits", name="Produits")
      */
     public function produits(Request $request)
     {
-        return  $this->render('gnt/produits.html.twig');
+        return  $this->render('site/produits.html.twig');
     }
 
     /**
-     * @Route("/Carriere_Candidature", name="Carriere_candidature")
+     * @Route("/carriere_candidature", name="Carriere_candidature")
      */
     public function carriere(Request $request)
     {
@@ -168,7 +168,7 @@ class securityController extends AbstractController
                 }
             }
         }
-        return  $this->render('gnt/carrieres.html.twig',
+        return  $this->render('site/carrieres.html.twig',
             [
                 'form' => $form->createView(),
             ]);
@@ -176,41 +176,30 @@ class securityController extends AbstractController
 
 
     /**
-     * @Route("/Carriere_Offer", name="Carriere_offre")
+     * @Route("/carriere_offre", name="Carriere_offre")
      */
     public function offre(Request $request)
     {
-        return  $this->render('gnt/carriere_offres.html.twig');
+        return  $this->render('site/carriere_offres.html.twig');
     }
 
     /**
-     * @Route("/Carriere_Culture", name="Carriere")
+     * @Route("/carriere_culture", name="Carriere")
      */
     public function culture(Request $request)
     {
-        return  $this->render('gnt/carriere_culture.html.twig');
+        return  $this->render('site/carriere_culture.html.twig');
     }
 
     /**
-     * @Route("/Gallery", name="Gallery")
+     * @Route("/gallery", name="Gallery")
      */
     public function photo(Request $request)
     {
         $albums = $this->getDoctrine()->getRepository(Album::class)->findAll();
-        return  $this->render('gnt/galerie.html.twig',[
+        return  $this->render('site/galerie.html.twig',[
             'albums' => $albums,
             ]);
-    }
-
-    /**
-     * @Route("/Gallery/Photo/Album/{album}", name="Gallery_photo_album_view")
-     */
-    public function photo_reservoir(Request $request, Album $album, ImageRepository $repository)
-    {
-        return  $this->render('gnt/reservoir.html.twig',[
-            'album' => $album,
-            'images' => $repository->findBy(['album' => $album]),
-        ]);
     }
 
     /**
