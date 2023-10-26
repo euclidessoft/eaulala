@@ -1212,8 +1212,23 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+    .carousel-img.slide_1 {
+        background-image: url('../images/slide1_mobil.avif');
+    }
+    .carousel-img.slide_2 {
+        background-image: url('../images/slide2_mobil.avif');
+    }
+    .carousel-img.slide_3 {
+        background-image: url('../images/slide3_mobil.avif');
+    }
+    .font-slide {
+        font-size: 1rem !important;
+    }
 
     .header-carousel {
+        aspect-ratio: 1 / 1;
+    }
+    .carousel-img {
         aspect-ratio: 1 / 1;
     }
 
@@ -1249,6 +1264,26 @@ textarea.form-control {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+    .carousel-img.slide_1 {
+        background-image: url('../images/slide1_tab.avif');
+    }
+    .carousel-img.slide_2 {
+        background-image: url('../images/slide2_tab.avif');
+    }
+    .carousel-img.slide_3 {
+        background-image: url('../images/slide3_tab.avif');
+    }
+    .font-slide {
+        font-size: 2.5rem !important;
+    }
+
+    .header-carousel {
+        aspect-ratio: 1 / 1;
+    }
+    .carousel-img {
+        aspect-ratio: 1 / 1;
+    }
+
     .navbar .nav-item .dropdown-menu {
         margin-top: 0;
         left: 15px;
@@ -1313,6 +1348,7 @@ textarea.form-control {
 }
 
 @media (max-width: 991.98px) {
+
 
     .header,
     .page-header {
