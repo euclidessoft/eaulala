@@ -976,29 +976,27 @@ b {
 /*** Footer ***/
 .footer {
     background-color: var(--primaire);
-    background-image: linear-gradient(rgba(0, 168, 243, 0.7), rgba(0, 168, 243, 0.7));
+    /*background-image: linear-gradient(rgba(0, 168, 243, 0.7), rgba(0, 168, 243, 0.7));*/
     background-size: cover;
     width: 100%;
     position: relative;
 }
 
 .footer-tittle {
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
     font-weight: bold;
-    color: var(--blanc);
-    margin-bottom: 3rem !important;
+    color: var(--secondaire);
+    margin-bottom: 2rem !important;
+    border-bottom: 5px solid var(--secondaire);
 }
 
 .footer-tittle::after {
-    content: "";
-    position: relative;
-    bottom: -15px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: var(--blanc);
-    display: block;
-    border-radius: 10px;
+    position: absolute;
+    content: "\f043";
+    font-family: "Font Awesome 6 Free", sans-serif;
+    top: 50px;
+    right: 17px;
+    font-size: 15px;
 }
 
 .footer .btn.btn-social {
