@@ -1213,6 +1213,10 @@ textarea.form-control {
 
 @media (max-width: 768px) {
 
+    .header-carousel {
+        aspect-ratio: 1 / 1;
+    }
+
     .navbar-toggler {
         color: var(--primaire);
         line-height: 1.5;
