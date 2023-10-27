@@ -3,30 +3,6 @@
 {% block carriere %}active{% endblock %}
 {% block body %}
     <!-- Header Start -->
-    <div class="container-fluid py-5 mb-5 page-header">
-        {{ include('site/page-header.html.twig') }}
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h1 class="display-5 text-white fw-bold mt-5 mb-3 animated fadeIn">
-                        {{ "Carrières"|trans }}
-                    </h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item">
-                                <a class="text-white" href="{{ path('Accueil') }}">
-                                    {{ "Accueil"|trans }}
-                                </a>
-                            </li>
-                            <li class="breadcrumb-item text-white">
-                                {{ "Carrières"|trans }}
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="services section-padding ">
         <div class="container">
@@ -88,12 +64,12 @@
                                 </div>
                                 <div class="mt-4">
                                     {{ form_row(form.cv, {'label': false, 'attr': {'onchange':'label_input()'}}) }}
-                                    <button class="btn btn-primaire text-bold ms-0" onclick="upload()">
+                                    <button type="button" class="btn btn-primaire text-bold ms-0" onclick="upload()">
                                         Selectionnez votre CV <i class="fa fa-upload ml-1"></i>
                                     </button><label id="choice"></label>
                                 </div>
                                 <div class="mt-4 text-center">
-                                    <button type="submit" class="btn btn-primaire btn-effect text-bold m-5 ms-0">
+                                    <button type="button" class="btn btn-primaire btn-effect text-bold m-5 ms-0">
                                         Soumettre <i class="fa fa-chevron-circle-right ml-1 mt-n1 align-middle"></i>
                                     </button>
                                 </div>
