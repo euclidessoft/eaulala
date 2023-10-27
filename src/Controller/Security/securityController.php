@@ -9,6 +9,8 @@ use App\Form\CandidatureType;
 use App\Form\ContactFormType;
 use App\Repository\ImageRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\File\Exception\FileException;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -124,11 +126,18 @@ class securityController extends AbstractController
     {
         return  $this->render('site/produits.html.twig');
     }
+    /**
+     * @Route("/Carriere", name="Carriere")
+     */
+    public function carriere(Request $request)
+    {
+        return  $this->render('site/carrieres.html.twig');
+    }
 
     /**
      * @Route("/carriere_candidature", name="Carriere_candidature")
      */
-    public function carriere(Request $request)
+    public function carrierecandidature(Request $request)
     {
         $candidature =  new Candidature();
         $form = $this->createForm(CandidatureType::class, $candidature);
@@ -144,8 +153,9 @@ class securityController extends AbstractController
                 if ($file) {
                     $originalFilename = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
                     // this is needed to safely include the file name as part of the URL
-                    $safeFilename = transliterator_transliterate('Any-Latin; Latin-ASCII; [^A-Za-z0-9_] remove; Lower()', $originalFilename);
-                    $newFilename = $safeFilename . '-' . uniqid() . '.' . $file->guessExtension();
+//                    $safeFilename = transliterator_transliterate('Any-Latin; Latin-ASCII; [^A-Za-z0-9_] remove; Lower()', $originalFilename);
+//                    $newFilename = $safeFilename . '-' . uniqid() . '.' . $file->guessExtension();
+                    $newFilename = $originalFilename . '-' . uniqid() . '.' . $file->guessExtension();
 
                     // Move the file to the directory where brochures are stored
                     try {
@@ -168,7 +178,7 @@ class securityController extends AbstractController
                 }
             }
         }
-        return  $this->render('site/carrieres.html.twig',
+        return  $this->render('site/carriere_candidature.html.twig',
             [
                 'form' => $form->createView(),
             ]);
@@ -184,7 +194,7 @@ class securityController extends AbstractController
     }
 
     /**
-     * @Route("/carriere_culture", name="Carriere")
+     * @Route("/carriere_culture", name="Carriere_culture")
      */
     public function culture(Request $request)
     {
