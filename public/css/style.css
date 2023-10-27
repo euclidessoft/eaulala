@@ -99,15 +99,23 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 }
 
 .carousel-img.slide_1 {
-    background-image: url('../images/slide1.avif');
+    background-image: url('../images/slide_1.avif');
 }
 
 .carousel-img.slide_2 {
-    background-image: url('../images/slide2.avif');
+    background-image: url('../images/slide_2.avif');
 }
 
 .carousel-img.slide_3 {
-    background-image: url('../images/slide3.avif');
+    background-image: url('../images/slide_3.avif');
+}
+
+.carousel-img.slide_4 {
+    background-image: url('../images/slide_4.avif');
+}
+
+.carousel-img.slide_5 {
+    background-image: url('../images/slide_5.avif');
 }
 
 .carousel-overlay {
@@ -1214,13 +1222,19 @@ textarea.form-control {
 
 @media (max-width: 768px) {
     .carousel-img.slide_1 {
-        background-image: url('../images/slide1_mobil.avif');
+        background-image: url('../images/slide_1_mobil.avif');
     }
     .carousel-img.slide_2 {
-        background-image: url('../images/slide2_mobil.avif');
+        background-image: url('../images/slide_2_mobil.avif');
     }
     .carousel-img.slide_3 {
-        background-image: url('../images/slide3_mobil.avif');
+        background-image: url('../images/slide_3_mobil.avif');
+    }
+    .carousel-img.slide_4 {
+        background-image: url('../images/slide_4_mobil.avif');
+    }
+    .carousel-img.slide_5 {
+        background-image: url('../images/slide_5_mobil.avif');
     }
     .font-slide {
         font-size: 1rem !important;
@@ -1266,13 +1280,19 @@ textarea.form-control {
 
 @media (min-width: 769px) and (max-width: 992px) {
     .carousel-img.slide_1 {
-        background-image: url('../images/slide1_tab.avif');
+        background-image: url('../images/slide_1_tab.avif');
     }
     .carousel-img.slide_2 {
-        background-image: url('../images/slide2_tab.avif');
+        background-image: url('../images/slide_2_tab.avif');
     }
     .carousel-img.slide_3 {
-        background-image: url('../images/slide3_tab.avif');
+        background-image: url('../images/slide_3_tab.avif');
+    }
+    .carousel-img.slide_4 {
+        background-image: url('../images/slide_4_tab.avif');
+    }
+    .carousel-img.slide_5 {
+        background-image: url('../images/slide_5_tab.avif');
     }
     .font-slide {
         font-size: 2.5rem !important;
