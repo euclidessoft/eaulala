@@ -13,7 +13,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-
+    {% block photobox_css %}
+    {% endblock %}
     <!-- Site CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
@@ -88,8 +89,8 @@
                 <div class="col-lg-3 col-md-6 position-relative">
                     <h4 class="footer-tittle">{{ "Liens utiles"|trans}}</h4>
                     <a class="btn btn-link" href="{{ path('About')}}">{{ "A propos"|trans}}</a>
-                    <a class="btn btn-link" href="#">{{ "Galerie"|trans}}</a>
-                    <a class="btn btn-link" href="#">{{ "Carrière"|trans}}</a>
+                    <a class="btn btn-link" href="{{ path('Gallery') }}">{{ "Galerie"|trans}}</a>
+                    <a class="btn btn-link" href="{{ path('Carriere') }}">{{ "Carrière"|trans}}</a>
                     <a class="btn btn-link" href="{{ path('Contact')}}">{{ "Contact"|trans}}</a>
                 </div>
                 <div class="col-lg-3 col-md-6 position-relative">
@@ -184,7 +185,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" async></script>
-
+{% block photobox_js %}
+{% endblock %}
 <!-- Main Javascript -->
 <script src="{{ asset('js/main.js')}}"></script>
 {#<script src="{{ asset('js/main.min.js')}}"></script>#}
