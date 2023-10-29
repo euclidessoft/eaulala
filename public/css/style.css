@@ -119,7 +119,7 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
 }
 
 .carousel-overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.4) 70%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     width: 100%;
     position: absolute;
     top: 0;
@@ -364,7 +364,7 @@ b {
 .client-banner {
     width: 100%;
     aspect-ratio: 740 / 493;
-    background-image: url(../images/client-home.avif);
+    background-image: url(../images/clients.avif);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -375,7 +375,7 @@ b {
 }
 
 .client-inner {
-    background-image: linear-gradient(90deg, var(--primaire) 50%, transparent);
+    background-image: linear-gradient(-90deg, var(--primaire) 50%, transparent);
     height: 100% !important;
 
 }
@@ -492,13 +492,13 @@ b {
     aspect-ratio: 1 / 2.08;
 }
 /********** debut client **********/
-.bordure {
+/*.bordure {
     border-top: 5px solid var(--primaire);
     border-right: 5px solid var(--primaire);
-}
+}*/
 .shadow{
-    color: var(--noir);
-    background: rgba(255,255,255,0.8); !important;
+    /*color: var(--noir);*/
+    background: rgba(255,255,255,0.8) !important;
   }
 /********** Fin client **********/
 
@@ -790,7 +790,7 @@ b {
 }
 
 .btn-primaire:hover {
-    background: transparent !important;
+    background: var(--secondaire) !important;
     color: var(--primaire) !important;
     border: 2px solid var(--primaire) !important;
 }
@@ -801,7 +801,7 @@ b {
 }
 
 .btn-secondaire:hover {
-    background: transparent !important;
+    background: var(--primaire) !important;
     color: var(--secondaire) !important;
     border: 2px solid var(--secondaire) !important;
 }
