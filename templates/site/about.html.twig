@@ -10,22 +10,32 @@
     <div class="container-fluid py-5">
         <div class="container fs-5 mb-5">
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                    <div class="position-relative h-100">
-                        <img class="img-fluid w-100 h-100 fit-cover border-bottom-right-1"
-                             src="{{ asset('images/eaulala.avif') }}" alt="Eaulàlà">
+                <div class="col-lg-6 wow animated fadeInLeft text-center" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <img class="w-100 h-100 border-bottom-right-1 fit-cover"
+                             src="{{ asset('images/eaulala.avif') }}" alt="A propos">
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
-                    <p class="mb-4">
-                        {{"Dans un monde en constante évolution, où les défis environnementaux et sociaux semblent se multiplier, l'accès à l'eau potable demeure un besoin essentiel et non négociable pour chaque individu."|trans}}
-                        {{"C'est dans ce contexte que l'entreprise Eaulàlà s'est engagée à voler au secours des populations en leur procurant une eau potable de qualité supérieure, et ce, de manière durable et responsable."|trans}}
-                    </p>
-                    <p class="mb-0">
-                        {{"Le nom Eaulàlà incarne un cri d'urgence, un appel à la conscience collective pour reconnaître l'importance vitale de l'eau dans nos vies. Plus qu'une simple entreprise, Eaulàlà s'est érigée en défenseur passionné de l'accès universel à l'eau potable, plaçant la population au cœur de ses préoccupations et actions."|trans}}
-                        {{"Forte de sa vision humaniste, Eaulàlà s'est donné pour mission de relever les défis liés à l'eau et de soulager les communautés en situation de crise."|trans}}
-                    </p>
+                <div class="col-lg-6">
+                    <div class="row g-5 h-100">
+                        <div class="col-12 wow animated fadeInDown" data-wow-delay="0.3s">
+                            <div class="p-4 shadow border-bottom-left-1">
+                                <h1 class="section-title text-lg-start text-center mb-5">
+                                    {{ "Qui sommes-nous"|trans }}
+                                </h1>
+                                <p class="fs-5 mb-3">
+                                    {{ "Dans un monde en constante évolution, où les défis environnementaux et sociaux semblent se multiplier, l'accès à l'eau potable reste un besoin essentiel et non négociable pour chaque individu."|trans }}
+                                    {{ "C'est dans ce contexte que l'entreprise Eaulàlà s'est engagée à voler au secours des populations en leur procurant une eau potable de qualité supérieure, et ce, de manière durable et responsable."|trans }}
+                                </p>
+                            </div>
 
+                        </div>
+                        <div class="col-md-12 wow animated fadeInUp" data-wow-delay="0.5s">
+                            <div class="bg-primaire text-secondaire h-100  p-4">
+                                {{ "Forte de sa vision humaniste, Eaulàlà s'est donné pour mission de relever les défis liés à l'eau et de soulager les communautés en situation de crise."|trans }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row g-5 mt-2">
