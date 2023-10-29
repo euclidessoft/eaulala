@@ -1,67 +1,51 @@
 {% extends 'layout.html.twig' %}
-{% block title %} {{ "Clients"|trans }}  - Eau là là {% endblock %}
+{% block title %} {{ "Clients"|trans }}  - Eaulàlà {% endblock %}
 {% block client %}active{% endblock %}
 {% block body %}
-    <!-- Header Start -->
 
-
-
-    <div class="container-fluid  client-banner pb-4">
+    <!-- Clients Start -->
+    <div class="container-fluid client-banner pb-4">
         <div class="container fs-5 mb-5 mt-5">
             <div class="row justify-content-center">
-
-                <div class="col-lg-10 col-md-12   wow fadeInRight shadow   bordure"
-                     data-wow-delay="0.1s">
-                    <h1 class="mt-5 text-center">{{ 'Clients'|trans }} </h1>
-
-
+                <div class="col-lg-10 col-md-12 wow fadeInRight shadow border-top-right-3 p-5" data-wow-delay="0.1s">
+                    <h1 class="text-center">
+                        {{ 'Clients'|trans }}
+                    </h1>
                     <p class="mb-4 mt-5 ">
-
-
                         {{ "Eaulàlà offre à ses clients une pléthore d'avantages et de bénéfices en garantissant la fourniture d'une eau potable de qualité supérieure d'une manière durable et responsable."|trans }}
-                        <br>
-                        <br>
+                    </p>
+                    <p class="mb-4 mt-5 ">
                         {{ "Voici quelques-uns des avantages que l'entreprise peut apporter à ses clients"|trans }}
                     </p>
                     <p class="mb-4">
                         <i class="fa-solid fa-angles-right text-primaire"></i>
-                        {{ "Eau potable de qualité supérieure : "|trans }}
+                        <b>{{ "Eau potable de qualité supérieure : "|trans }}</b>
                         {{ "Eaulàlà s'engage à fournir de l'eau potable de la plus haute qualité. "|trans }}
                         {{ " Les clients peuvent avoir confiance en la pureté et la sécurité de l'eau fournie par l'entreprise."|trans }}
                     </p>
                     <p class="mb-4">
                         <i class="fa-solid fa-angles-right text-primaire"></i>
-                        {{ "Durabilité environnementale : "|trans }}
+                        <b>{{ "Durabilité environnementale : "|trans }}</b>
                         {{ "Eaulàlà veille à minimiser son impact sur l'environnement en adoptant des pratiques durables. Cela signifie que les clients contribuent à la préservation de l'écosystème tout en ayant accès à de l'eau potable."|trans }}
                     </p>
                     <p class="mb-4">
                         <i class="fa-solid fa-angles-right text-primaire"></i>
-                        {{ "Fiabilité : "|trans }}
+                        <b>{{ "Fiabilité : "|trans }}</b>
                         {{ "Eaulàlà s'efforce d'assurer un approvisionnement en eau potable continu. Les clients peuvent compter sur l'entreprise, même dans des situations d'urgence."|trans }}
                     </p>
                     <p class="mb-4">
                         <i class="fa-solid fa-angles-right text-primaire"></i>
-                        {{ "Sensibilisation : "|trans }}
+                        <b>{{ "Sensibilisation : "|trans }}</b>
                         {{ "Eaulàlà organise des campagnes de sensibilisation pour éduquer le public sur l'importance de l'eau potable et encourager la conservation de l'eau. Les clients peuvent se joindre à ces efforts et contribuer à un meilleur avenir pour tous."|trans }}
                     </p>
                     <p class="mb-4">
                         <i class="fa-solid fa-angles-right text-primaire"></i>
-                        {{ "Transparence : "|trans }}
+                        <b>{{ "Transparence : "|trans }}</b>
                         {{ " Eaulàlà est transparente quant à ses pratiques et ses performances. Les clients peuvent avoir accès à des informations sur la qualité de l'eau, les pratiques durables et les résultats sociaux et environnementaux de l'entreprise."|trans }}
                     </p>
-
-
-
                 </div>
-
-
-
             </div>
         </div>
     </div>
-
-
-
-
-    <!-- About End -->
+    <!-- Clients End -->
 {% endblock %}
