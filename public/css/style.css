@@ -95,7 +95,7 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
     width: 100%;
     background-size: cover;
     background-position: center center;
-    aspect-ratio: 18.5 / 9;
+    aspect-ratio: 4000 / 2450;
 }
 
 .carousel-img.slide_1 {
@@ -371,7 +371,8 @@ b {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--blanc);
+    padding: 5rem 0;
+    /*color: var(--blanc);*/
 }
 
 .client-inner {
