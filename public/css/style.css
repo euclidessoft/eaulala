@@ -807,12 +807,6 @@ b {
     border: 2px solid var(--secondaire) !important;
 }
 
-.btn-primaire,
-.btn-secondaire {
-    border: 2px solid transparent !important;
-    padding: 1rem !important;
-}
-
 .btn-primaire:hover,
 .btn-secondaire:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);

@@ -2,9 +2,10 @@
 {% block home %}active{% endblock %}
 {% block body %}
 
-    <!--PreLoader Ends-->
+    <!--PreLoader Start -->
+    <!--PreLoader Ends -->
 
-    <!-- Header Start -->
+    <!-- Slide Start -->
     <div class="container-fluid p-0 mb-lg-5">
         <div id="header-carousel" class="carousel header-carousel" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -108,7 +109,7 @@
             </div>
         </div>
     </div>
-    <!-- Header End -->
+    <!-- Slide Ends -->
 
     <!-- About Start -->
     <div class="container-fluid py-4 mt-lg-5 mb-5">
@@ -147,14 +148,16 @@
             </div>
         </div>
     </div>
+    <!-- About Ends -->
 
+    <!-- Potabilité Start -->
     <div class="container-fluid banner d-flex justify-content-center align-items-center">
         <div class="container my-4 py-5">
             <div class="row">
                 <div class="col-lg-5">
                     <div class="bg-blanc-8 p-5 shadow border-y-2 wow animated fadeInLeft" data-wow-delay="0.5s">
                         <h1 class="section-title text-center mb-5">
-                            {{ "Potabilite"|trans }}
+                            {{ "Potabilité"|trans }}
                         </h1>
                         <p class="fs-5">
                             {{ "Eaulàlà effectue"|trans }}
@@ -164,7 +167,9 @@
                             {{ "Grâce à notre expertise et à notre engagement envers la santé publique, nous fournissons des solutions de contrôle de la"|trans }}
                             <b>{{ "qualité de l'eau"|trans }}</b> {{ "essentielles pour les collectivités, les entreprises et les particuliers."|trans }}
                         </p>
-                        <a class="btn btn-primaire mt-4" href="{{ path('Potabilite') }}"> {{ "Découvrir"|trans }} </a>
+                        <a class="btn btn-primaire mt-4 px-5 py-3" href="{{ path('Potabilite') }}">
+                            {{ "Découvrir"|trans }}
+                        </a>
 
                     </div>
                 </div>
@@ -172,7 +177,9 @@
             </div>
         </div>
     </div>
+    <!-- Potabilité ends -->
 
+    <!-- Nappe Start -->
     <div class="container-fluid py-4 mb-5 nappe">
         <div class="container my-5">
             <div class="row g-4">
@@ -207,6 +214,9 @@
             </div>
         </div>
     </div>
+    <!-- Nappe Ends -->
+
+    <!-- Forage Start -->
     <div class="container-fluid py-4 mb-5">
         <div class="container my-5">
             <div class="row g-4">
@@ -234,6 +244,9 @@
             </div>
         </div>
     </div>
+    <!-- Forage Ends -->
+
+    <!-- Distribution Start -->
     <div class="container-fluid py-4 mb-5">
         <div class="container my-5">
             <div class="row g-4">
@@ -262,6 +275,9 @@
             </div>
         </div>
     </div>
+    <!-- Distribution Ends -->
+
+    <!-- Clients Start -->
     <div class="container-fluid client-banner">
         <div class="container">
             <div class="row">
@@ -291,7 +307,6 @@
             </div> <!-- row -->
         </div> <!-- row -->
     </div>
-
-    <!-- Gallery End -->
+    <!-- Clients End -->
 
 {% endblock %}
