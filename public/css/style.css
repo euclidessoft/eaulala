@@ -37,11 +37,11 @@
 
 }
 
-svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+/*svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
     overflow: visible;
     box-sizing: content-box;
     margin-left: 10px;
-}
+}*/
 
 .loader {
     bottom: 0;
@@ -738,7 +738,7 @@ b {
     font-weight: bold;
     font-size: 2rem;
     align-items: center;
-    /*justify-content: center;*/
+    justify-content: center;
     background: var(--primaire);
     color: var(--secondaire);
     border: 1px solid var(--secondaire);
@@ -1248,13 +1248,8 @@ textarea.form-control {
         aspect-ratio: 1 / 1;
     }
 
-    .navbar-toggler {
-        color: var(--primaire);
-        line-height: 1.5;
-    }
-
     .navbar-nav .nav-link.active {
-        color: var(--secondaire);
+        color: var(--noir);
         border-bottom: 5px solid var(--primaire);
     }
 
@@ -1329,12 +1324,8 @@ textarea.form-control {
         opacity: 1;
     }
 
-    .navbar-toggler {
-        color: var(--primaire) !important;
-    }
-
     .navbar-nav .nav-link.active {
-        color: var(--secondaire);
+        color: var(--noir);
         border-bottom: 5px solid var(--primaire);
     }
 
@@ -1385,5 +1376,15 @@ textarea.form-control {
     .sticky-top {
         background-color: var(--secondaire);
         top: 0;
+    }
+
+    .navbar-toggler {
+        color: var(--primaire) !important;
+        line-height: 1.5;
+        border: 1px solid var(--primaire) !important;
+    }
+
+    .navbar-toggler:focus {
+        border: 1px solid var(--primaire) !important;
     }
 }
