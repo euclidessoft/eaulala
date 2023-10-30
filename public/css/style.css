@@ -783,6 +783,11 @@ b {
     font-weight: 600;
     transition: .5s;
     border-radius: 0;
+    border: 2px solid transparent !important;
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primaire {
@@ -805,11 +810,6 @@ b {
     background: var(--primaire) !important;
     color: var(--secondaire) !important;
     border: 2px solid var(--secondaire) !important;
-}
-
-.btn-primaire:hover,
-.btn-secondaire:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 
