@@ -1,12 +1,12 @@
 {% extends 'layout.html.twig' %}
-{% block title %} {{ "Contactez-nous"|trans }} - Eau là là {% endblock %}
+{% block title %} {{ "Contactez-nous"|trans }} - Eaulàlà {% endblock %}
 {% block contact %}active{% endblock %}
 {% block body %}
 
     <div class="container-fluid mb-5 py-5">
         <div class="container">
             {% for message in app.flashes('notice') %}
-                <div class="alert alert-success  mb-2 alert-dismissible fade show radius-10">
+                <div class="alert alert-success mb-2 alert-dismissible fade show">
                     {{ message|trans }}
                 </div>
             {% endfor %}
@@ -17,7 +17,7 @@
                         <div class="col-md-6">
                             {{ form_start(form, {'attr':{'id': 'form'}}) }}
                             <div class="mt-2">
-                                {{ form_row(form.nom, {'label': 'Votre Nom', 'attr': {'placeholder':'Nom'}}) }}
+                                {{ form_row(form.nom, {'label': 'Votre Nom', 'attr': {'placeholder':''}}) }}
                             </div>
                         </div>
                         <div class="col-md-6">

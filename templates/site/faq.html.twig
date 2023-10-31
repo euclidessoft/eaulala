@@ -2,27 +2,21 @@
 {% block title %} {{ "FAQ"|trans }}  - Eau là là {% endblock %}
 {% block faq %}active{% endblock %}
 {% block body %}
-    <!-- Header Start -->
-
 
     <div class="container-fluid faq-banner p-5">
         <div class="row">
-            <div class="col-lg-12">
-
-                <h1 class="text-center text-black fs-1 ">
-                    <strong>
+            <div class="col-lg-12 mt-5">
+                <div class="faq-title mb-5 p-5">
+                    <h1 class="text-center text-secondaire section-title mt-5">
                         {{ "Foire aux questions"|trans }}
                         <i class="fa-solid fa-circle-question"></i>
-                    </strong>
-                </h1>
-
-                <br>
-                <p class="text-center  text-black"><strong>
-                        {{ "Réponses aux interrogations courantes que vous pouvez avoir"|trans }} </strong></p>
-                <br>
-
+                    </h1>
+                    <p class="text-center text-secondaire fs-4 mt-5">
+                        {{ "Réponses aux interrogations courantes que vous pouvez avoir"|trans }}
+                    </p>
+                </div>
             </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion accordion-flush" id="accordionfaq">
                 <div class="row">
                     <div class="col-lg-6 ">
                         <div class="accordion-item">
@@ -34,10 +28,10 @@
                                 </button>
                             </h2>
                             <div id="flush-collapsefive" class="accordion-collapse collapse"
-                                 data-bs-parent="#accordionFlushExample">
+                                 data-bs-parent="#accordionfaq">
                                 <div class="accordion-body">
                                     <p>
-                                        {{ "Eaulàlà est une entreprise engagée dans la fourniture d'eau potable de qualité supérieure de manière durable et responsable."|trans}}
+                                        {{ "Eaulàlà est une entreprise engagée dans la fourniture d'eau potable de qualité supérieure de manière durable et responsable."|trans }}
                                         {{ "Notre mission principale est de répondre aux besoins en eau potable tout en minimisant notre impact sur l'environnement."|trans }}
                                     </p>
                                 </div>
@@ -52,10 +46,10 @@
                                 </button>
                             </h2>
                             <div id="flush-collapsesix" class="accordion-collapse collapse"
-                                 data-bs-parent="#accordionFlushExample">
+                                 data-bs-parent="#accordionfaq">
                                 <div class="accordion-body">
                                     <p>
-                                        {{ "Nous utilisons des technologies avancées de purification de l'eau et nous nous conformons aux normes les plus strictes pour garantir la qualité de notre eau."|trans}}
+                                        {{ "Nous utilisons des technologies avancées de purification de l'eau et nous nous conformons aux normes les plus strictes pour garantir la qualité de notre eau."|trans }}
                                         {{ "Des contrôles réguliers sont effectués pour s'assurer de la pureté de l'eau que nous fournissons."|trans }}
                                     </p>
                                 </div>
@@ -70,10 +64,10 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseseven" class="accordion-collapse collapse"
-                                 data-bs-parent="#accordionFlushExample">
+                                 data-bs-parent="#accordionfaq">
                                 <div class="accordion-body">
                                     <p>
-                                        {{ "Eaulàlà s'engage à réduire son empreinte environnementale en adoptant des pratiques durables telles que la gestion efficace de l'eau et la réduction des déchets."|trans}}
+                                        {{ "Eaulàlà s'engage à réduire son empreinte environnementale en adoptant des pratiques durables telles que la gestion efficace de l'eau et la réduction des déchets."|trans }}
                                         {{ "Nous cherchons à minimiser notre impact sur la planète."|trans }}
                                     </p>
                                 </div>
@@ -89,10 +83,10 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseheight" class="accordion-collapse collapse"
-                                 data-bs-parent="#accordionFlushExample">
+                                 data-bs-parent="#accordionfaq">
                                 <div class="accordion-body">
                                     <p>
-                                        {{ "Nous avons des protocoles d'intervention d'urgence bien établis pour réagir rapidement en cas de crises."|trans}}
+                                        {{ "Nous avons des protocoles d'intervention d'urgence bien établis pour réagir rapidement en cas de crises."|trans }}
                                         {{ "Notre objectif est de fournir de l'eau potable aux communautés touchées et d'aider à soulager les situations de crise."|trans }}
                                     </p>
                                 </div>
@@ -107,10 +101,10 @@
                                 </button>
                             </h2>
                             <div id="flush-collapsefor" class="accordion-collapse collapse"
-                                 data-bs-parent="#accordionFlushExample">
+                                 data-bs-parent="#accordionfaq">
                                 <div class="accordion-body">
                                     <p>
-                                        {{ "Vous pouvez nous contacter via notre site web ou en utilisant les coordonnées fournies sur la page de contact."|trans}}
+                                        {{ "Vous pouvez nous contacter via notre site web ou en utilisant les coordonnées fournies sur la page de contact."|trans }}
                                         {{ "Notre équipe est là pour répondre à toutes vos questions et préoccupations."|trans }}
 
                                     </p>
@@ -128,10 +122,10 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                 data-bs-parent="#accordionFlushExample">
+                                 data-bs-parent="#accordionfaq">
                                 <div class="accordion-body">
                                     <p>
-                                        {{ "En choisissant Eaulàlà, vous soutenez notre mission humaniste."|trans}}
+                                        {{ "En choisissant Eaulàlà, vous soutenez notre mission humaniste."|trans }}
                                         {{ "Vous pouvez également participer à nos campagnes de sensibilisation, aider à économiser l'eau et être conscient de l'importance de la conservation de l'eau."|trans }}
                                     </p>
                                 </div>
@@ -146,10 +140,10 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                 data-bs-parent="#accordionFlushExample">
+                                 data-bs-parent="#accordionfaq">
                                 <div class="accordion-body">
                                     <p>
-                                        {{ "Vous pouvez trouver des informations transparentes sur nos performances sur notre site web."|trans}}
+                                        {{ "Vous pouvez trouver des informations transparentes sur nos performances sur notre site web."|trans }}
                                         {{ "Nous publions régulièrement des rapports sur nos actions sociales et environnementales pour que nos clients soient informés."|trans }}
                                     </p>
                                 </div>
@@ -164,10 +158,10 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                 data-bs-parent="#accordionFlushExample">
+                                 data-bs-parent="#accordionfaq">
                                 <div class="accordion-body">
                                     <p>
-                                        {{ "Une partie de nos bénéfices est réinvestie dans des projets visant à améliorer l'accès à l'eau potable dans les régions défavorisées."|trans}}
+                                        {{ "Une partie de nos bénéfices est réinvestie dans des projets visant à améliorer l'accès à l'eau potable dans les régions défavorisées."|trans }}
                                         {{ "En tant que client, vous contribuez indirectement à ces initiatives."|trans }}
                                     </p>
                                 </div>
@@ -184,11 +178,10 @@
                                 </button>
                             </h2>
                             <div id="flush-collapsenine" class="accordion-collapse collapse"
-                                 data-bs-parent="#accordionFlushExample">
+                                 data-bs-parent="#accordionfaq">
                                 <div class="accordion-body">
                                     <p>
                                         {{ "Pour plus d'information veuillez-nous contacter directement dans la page contact"|trans }}
-
                                     </p>
                                 </div>
                             </div>
@@ -202,10 +195,11 @@
                                 </button>
                             </h2>
                             <div id="flush-collapseten" class="accordion-collapse collapse"
-                                 data-bs-parent="#accordionFlushExample">
+                                 data-bs-parent="#accordionfaq">
                                 <div class="accordion-body">
                                     <p>
-                                        {{ "Pour plus d'information veuillez-nous contacter directement dans la page contact"|trans }}
+                                        {{ "Pour plus d'information veuillez-nous contacter directement sur la page"|trans }}
+                                        <a href="{{ path('Contact') }}">contact</a>
                                     </p>
                                 </div>
                             </div>

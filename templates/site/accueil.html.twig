@@ -117,14 +117,14 @@
             <div class="row g-4">
                 <div class="col-lg-6 wow animated fadeInLeft text-center" data-wow-delay="0.1s">
                     <div class="h-100">
-                        <img class="w-100 h-100 border-bottom-right-1 fit-cover"
+                        <img class="w-100 h-100 border-bottom-right-1 fit-cover shadow"
                              src="{{ asset('images/eaulala.avif') }}" alt="A propos">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-4">
                         <div class="col-12 wow animated fadeInDown" data-wow-delay="0.3s">
-                            <div class="p-4 shadow border-bottom-left-1">
+                            <div class="p-5 shadow border-bottom-left-1">
                                 <h1 class="section-title text-lg-start text-center mb-5">
                                     {{ "Qui sommes-nous"|trans }}
                                 </h1>
@@ -139,7 +139,7 @@
 
                         </div>
                         <div class="col-md-12 wow animated fadeInUp" data-wow-delay="0.5s">
-                            <div class="bg-primaire text-secondaire h-100  p-4">
+                            <div class="bg-primaire text-secondaire h-100 shadow p-5">
                                 {{ "Forte de sa vision humaniste, Eaulàlà s'est donné pour mission de relever les défis liés à l'eau et de soulager les communautés en situation de crise."|trans }}
                             </div>
                         </div>
@@ -170,7 +170,6 @@
                         <a class="btn btn-primaire mt-4 px-5 py-3" href="{{ path('Potabilite') }}">
                             {{ "Découvrir"|trans }}
                         </a>
-
                     </div>
                 </div>
 
@@ -205,7 +204,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight text-center" data-wow-delay="0.3s">
-                    <div class="h-100">
+                    <div class="h-100 shadow">
                         <img class="w-100 h-100 border-x-1 fit-cover"
                              src="{{ asset('images/nappe.avif') }}" alt="nappe d'eau potable">
                     </div>
@@ -221,13 +220,13 @@
         <div class="container my-5">
             <div class="row g-4">
                 <div class="col-lg-6 wow fadeInLeft text-center" data-wow-delay="0.3s">
-                    <div class="h-100">
+                    <div class="h-100 shadow">
                         <img class="w-100 h-100 border-x-1 fit-cover"
-                             src="{{ asset('images/forage.avif') }}" alt="nappe d'eau potable">
+                             src="{{ asset('images/forage.avif') }}" alt="forage">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
-                    <div class="p-5 h-100 border-bottom-left-1 bg-white">
+                    <div class="p-5 h-100 border-bottom-left-1 bg-white shadow">
                         <h1 class="section-title mb-5">
                             {{ "Forage d'eau potable"|trans }}
                         </h1>
@@ -251,7 +250,7 @@
         <div class="container my-5">
             <div class="row g-4">
                 <div class="col-lg-8 wow fadeInLeft" data-wow-delay="0.3s">
-                    <div class="p-4 h-100 border-bottom-left-1 bg-white">
+                    <div class="p-5 h-100 border-bottom-left-1 bg-white shadow">
                         <h1 class="section-title text-lg-start mb-5">
                             {{ "Distribution d'eau potable"|trans }}
                         </h1>
@@ -267,9 +266,9 @@
                     </div>
                 </div>
                 <div class="col-lg-4 wow fadeInRight text-center" data-wow-delay="0.3s">
-                    <div class="h-100">
+                    <div class="h-100 shadow">
                         <img class="w-100 h-100 border-top-right-1 fit-cover"
-                             src="{{ asset('images/distribution_home.avif') }}" alt="nappe d'eau potable">
+                             src="{{ asset('images/distribution_home.avif') }}" alt="Distribution d'eau potable">
                     </div>
                 </div>
             </div>
@@ -283,8 +282,8 @@
             <div class="row">
                 <div class="col-lg-6 col-md-8"></div>
                 <div class="col-lg-6 col-md-8">
-                    <div class="client-inner py-3 ps-5 animated slideInRight" data-wow-delay="0.2s">
-                        <div class="text-center mb-5 mt-5 animated slideInRight" data-wow-delay="0.3s">
+                    <div class="client-inner py-3 py-5 animated slideInRight" data-wow-delay="0.2s">
+                        <div class="text-center mb-5 animated slideInRight" data-wow-delay="0.3s">
                             <h1 class="section-title text-center text-secondaire px-3 mb-5">
                                 {{ "Clients"|trans }}
                             </h1>
@@ -295,7 +294,6 @@
                                 {{ "Nous intervenons en cas de crise et sensibilisons à l'importance de l'eau tout en préservant l'environnement."|trans}}
                                 {{ "Rejoignez-nous pour un avenir où chaque goutte compte."|trans }}
                             </p>
-
                             <div class="text-center">
                                 <a class="btn btn-secondaire mt-4 px-5 py-3" href="{{ path('Client') }}">
                                     {{ "Plus de détails ..."|trans }}
