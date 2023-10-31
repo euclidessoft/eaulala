@@ -47,7 +47,7 @@
             backtop.css('display', 'flex');
         } else {
             backtop.fadeOut('fast');
-            backtop.css('display', 'flex');
+            backtop.css('display', 'none');
         }
     });
     $('.back-to-top').click(function () {

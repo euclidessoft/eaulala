@@ -5,10 +5,11 @@
     <!-- Header Start -->
 
     <div class="services section-padding ">
-        <div class="container">
+        <div class="col-10 offset-1">
             <div class="row justify-content-center py-5">
                 {% for message in app.flashes('notice') %}
-                    <div class="alert alert-success  mb-2 alert-dismissible fade show radius-10">
+                    <div class="alert alert-success alert-dismissible fade show mb-5" role="alert">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         {{ message|trans }}
                     </div>
                 {% endfor %}
@@ -28,20 +29,21 @@
                         {{ form_row(form.lieunaiss, {'label': 'Lieu de naissance', 'attr': {'placeholder':'Votre lieu de naissance'}}) }}
                     </div>
                     <div class="mt-4">
-                        {{ form_row(form.activite, {'label': 'Votre domaine d\'activité', 'attr': {'placeholder':'Votre domaine activité'}}) }}
+                        {{ form_row(form.activite, {'label': 'Votre domaine d\'activité', 'attr': {'placeholder':'Votre domaine d\'activité'}}) }}
                     </div>
                     <div class="mt-4">
-                        {{ form_row(form.niveau, {'label': 'Votre Niveau d\'etude', 'attr': {'placeholder':'Votre Niveau etude'}}) }}
+                        {{ form_row(form.niveau, {'label': 'Votre Niveau d\'etude', 'attr': {'placeholder':'Votre Niveau d\'etude'}}) }}
                     </div>
                     <div class="mt-4">
                         {{ form_row(form.cv, {'label': false, 'attr': {'onchange':'label_input()'}}) }}
-                        <button type="button" class="btn btn-primaire text-bold ms-0" onclick="upload()">
-                            Selectionnez votre CV <i class="fa fa-upload ml-1"></i>
+                        <button type="button" class="btn btn-primaire px-3 py-2" onclick="upload()">
+                            {{ "Ajoutez votre CV"|trans }}
+                            <i class="fa fa-upload"></i>
                         </button>
                         <label id="choice"></label>
                     </div>
                     <div class="mt-4 text-center">
-                        <button type="submit" class="btn btn-primaire btn-effect text-bold m-5 ms-0">
+                        <button type="submit" class="btn btn-primaire mt-4 px-5 py-3">
                             Soumettre <i class="fa fa-chevron-circle-right ml-1 mt-n1 align-middle"></i>
                         </button>
                     </div>
