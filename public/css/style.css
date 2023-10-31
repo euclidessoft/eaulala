@@ -1130,7 +1130,7 @@ textarea.form-control {
 }
 
 .lang-button:hover {
-    background: var(--blanc);
+    background-color: rgba(var(--primaire-rgb), 0.1);
     color: var(--primaire);
 }
 
