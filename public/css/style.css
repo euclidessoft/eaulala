@@ -366,7 +366,7 @@ b {
 
 .client-banner {
     width: 100%;
-    aspect-ratio: 740 / 493;
+    aspect-ratio: 1470 / 980;
     background-image: url(../images/clients.avif);
     background-size: cover;
     background-position: center;
@@ -1110,6 +1110,12 @@ a {
     padding: 5px 10px;
     height: auto !important;
 }
+
+.newsletter-form .form-control {
+    font-size: 1rem;
+    padding: 0.375rem 0.75rem !important;
+}
+
 label {
     color: rgba(0, 0, 0, 0.7);
 }
@@ -1221,6 +1227,7 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+
     .carousel-img.slide_1 {
         background-image: url('../images/slide_1_mobil.avif');
     }
@@ -1276,6 +1283,11 @@ textarea.form-control {
     .back-to-top {
         right: 10px;
         bottom: 10px;
+    }
+
+    .client-banner {
+        aspect-ratio: 415 / 762;
+        background-image: url(../images/clients_mobil.avif);
     }
 }
 
