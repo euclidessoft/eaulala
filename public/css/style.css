@@ -42,6 +42,11 @@
     box-sizing: content-box;
     margin-left: 10px;
 }*/
+audio{
+    position: absolute;
+    top: 0;
+    z-index: -100000;
+}
 
 .loader {
     bottom: 0;
@@ -340,7 +345,7 @@ b {
 
 /********** Potabilite **********/
 .banner {
-    background-image: url('../images/potabilite.avif');
+    background-image: url('../images/potability.avif');
     background-size: cover;
     /*aspect-ratio: 18 / 9;*/
     background-position: center;

@@ -305,6 +305,13 @@
             </div> <!-- row -->
         </div> <!-- row -->
     </div>
-    <!-- Clients End -->
+    {% block photobox_js %}
+        <script>
+            window.onload=function(){
+            document.getElementById("myAudio").play();
+        }
+        </script>
+
+    {% endblock %}
 
 {% endblock %}

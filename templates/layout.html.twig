@@ -20,7 +20,9 @@
 
 </head>
 <body>
-
+<audio id="myAudio" controls autoplay loop>
+    <source src="{{ asset('images/son.mp3') }}" type="audio/mpeg">
+</audio>
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-secondaire sticky-top p-0">
     <a href="{{ path('Accueil')}}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
@@ -178,6 +180,7 @@
             </div>
         </div>
     </div>
+
 </footer>
 <!-- Footer End -->
 
@@ -196,5 +199,10 @@
 <!-- Main Javascript -->
 <script src="{{ asset('js/main.js')}}"></script>
 {#<script src="{{ asset('js/main.min.js')}}"></script>#}
+<script>
+    window.onload=function(){
+        document.getElementById("myAudio").play();
+    }
+</script>
 </body>
 </html>
