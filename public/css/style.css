@@ -1270,10 +1270,6 @@ textarea.form-control {
         border-bottom: 5px solid var(--primaire);
     }
 
-    .navbar-nav .nav-link {
-        color: var(--primaire);
-    }
-
     .page-header {
         padding-top: 0;
         padding-bottom: 0;
@@ -1390,7 +1386,6 @@ textarea.form-control {
 
 @media (max-width: 991.98px) {
 
-
     .header,
     .page-header {
         margin-top: 0;
@@ -1414,5 +1409,14 @@ textarea.form-control {
 
     .navbar-toggler:focus {
         border: 1px solid var(--primaire) !important;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem !important;
+    }
+
+    .lang-button {
+        position: absolute;
+        right: 30%;
     }
 }
