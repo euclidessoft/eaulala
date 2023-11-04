@@ -1092,7 +1092,7 @@ a {
 .form-control {
     border: 1px solid var(--primaire) !important;
     border-radius: unset;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 1rem .75rem !important;
 }
 

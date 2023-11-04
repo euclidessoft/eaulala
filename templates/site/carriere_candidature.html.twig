@@ -2,11 +2,10 @@
 {% block title %} {{ "Carrières"|trans }}  - Eau là là {% endblock %}
 {% block carriere %}active{% endblock %}
 {% block body %}
-    <!-- Header Start -->
 
-    <div class="services section-padding ">
+    <div class="services section-padding mb-5">
         <div class="col-10 offset-1">
-            <div class="row justify-content-center py-5">
+            <div class="row justify-content-center p-5">
                 {% for message in app.flashes('notice') %}
                     <div class="alert alert-success alert-dismissible fade show mb-5" role="alert">
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -55,8 +54,4 @@
         </div>
     </div>
 
-
-
-
-    <!-- About End -->
 {% endblock %}
