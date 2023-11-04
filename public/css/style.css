@@ -766,6 +766,31 @@ b {
     }
 }
 
+.mutesound {
+    border-radius: 0 !important;
+    position: fixed;
+    left: 0px;
+    top: 80px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    background: var(--primaire);
+    color: var(--secondaire);
+    border: 1px solid var(--secondaire);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: all ease 300ms;
+    z-index: 99;
+    overflow: hidden;
+}
+.mutesound:hover {
+    background: var(--secondaire);
+    color: var(--primaire);
+    border: 1px solid var(--primaire);
+}
+
 /*** Button ***/
 
 .btn {

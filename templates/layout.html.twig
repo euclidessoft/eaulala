@@ -20,9 +20,7 @@
 
 </head>
 <body>
-<audio id="myAudio" controls autoplay loop>
-    <source src="{{ asset('images/son.mp3') }}" type="audio/mpeg">
-</audio>
+
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-secondaire sticky-top p-0">
     <a href="{{ path('Accueil')}}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
@@ -47,6 +45,14 @@
     <button id="changelang" class="lang-button me-5">
     </button>
 </nav>
+<audio id="myAudio" controls autoplay loop>
+    <source src="/images/son.mp3" type="audio/mpeg">
+</audio>
+<div  id="btnsound">
+    <button type="button" class="mutesound"  title='deactiver le son' onclick="soundoff()">
+        <i class="fa-solid fa-volume-xmark"></i>
+    </button>
+</div>
 <!-- Navbar End -->
 {% block body %}
 
@@ -200,8 +206,31 @@
 <script src="{{ asset('js/main.js')}}"></script>
 {#<script src="{{ asset('js/main.min.js')}}"></script>#}
 <script>
-    window.onload=function(){
+    window.onload = function () {
         document.getElementById("myAudio").play();
+    }
+
+    function soundoff() {
+        document.getElementById("myAudio").pause();
+        btnsound();
+    }
+
+    function btnsound() {
+        $("#btnsound").html("<button type=\"button\" class=\"mutesound\" title='activer le son' onclick=\"playsound()\">\n" +
+            "        <i class=\"fa-solid fa-volume-high\"></i>\n" +
+            "    </button>");
+
+    }
+    function playsound() {
+        document.getElementById("myAudio").play();
+        btnsoundoff();
+    }
+
+    function btnsoundoff() {
+        $("#btnsound").html("<button type=\"button\" class=\"mutesound\"  title='deactiver le son' onclick=\"soundoff()\">\n" +
+            "        <i class=\"fa-solid fa-volume-xmark\"></i>\n" +
+            "    </button>");
+
     }
 </script>
 </body>
