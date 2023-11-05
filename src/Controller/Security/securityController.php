@@ -36,14 +36,15 @@ class securityController extends AbstractController
      */
     public function accueil(Request $request)
     {
-       return  $this->render('site/accueil.html.twig');
+        return $this->render('site/accueil.html.twig');
     }
+
     /**
      * @Route("/about", name="About")
      */
     public function about(Request $request)
     {
-        return  $this->render('site/about.html.twig');
+        return $this->render('site/about.html.twig');
     }
 
     /**
@@ -51,7 +52,7 @@ class securityController extends AbstractController
      */
     public function potabilite(Request $request)
     {
-        return  $this->render('site/potabilite.html.twig');
+        return $this->render('site/potabilite.html.twig');
     }
 
     /**
@@ -59,7 +60,7 @@ class securityController extends AbstractController
      */
     public function distribution(Request $request)
     {
-        return  $this->render('site/distribution.html.twig');
+        return $this->render('site/distribution.html.twig');
     }
 
     /**
@@ -67,7 +68,7 @@ class securityController extends AbstractController
      */
     public function nappe(Request $request)
     {
-        return  $this->render('site/nappe.html.twig');
+        return $this->render('site/nappe.html.twig');
     }
 
     /**
@@ -75,7 +76,7 @@ class securityController extends AbstractController
      */
     public function forage(Request $request)
     {
-        return  $this->render('site/forage.html.twig');
+        return $this->render('site/forage.html.twig');
     }
 
     /**
@@ -83,7 +84,7 @@ class securityController extends AbstractController
      */
     public function client(Request $request)
     {
-        return  $this->render('site/client.html.twig');
+        return $this->render('site/client.html.twig');
     }
 
     /**
@@ -91,7 +92,7 @@ class securityController extends AbstractController
      */
     public function faq(Request $request)
     {
-        return  $this->render('site/faq.html.twig');
+        return $this->render('site/faq.html.twig');
     }
 
     /**
@@ -99,13 +100,11 @@ class securityController extends AbstractController
      */
     public function contact(Request $request)
     {
-        $contact =  new Contact();
+        $contact = new Contact();
         $form = $this->createForm(ContactFormType::class, $contact);
-        if ($request->isMethod('POST'))
-        {
+        if ($request->isMethod('POST')) {
             $form->handleRequest($request);
-            if($form->isValid())
-            {
+            if ($form->isValid()) {
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($contact);
                 $em->flush();
@@ -113,7 +112,7 @@ class securityController extends AbstractController
                 return $this->redirectToRoute('Contact');
             }
         }
-        return  $this->render('site/contact.html.twig',
+        return $this->render('site/contact.html.twig',
             [
                 'form' => $form->createView(),
             ]);
@@ -124,28 +123,27 @@ class securityController extends AbstractController
      */
     public function produits(Request $request)
     {
-        return  $this->render('site/produits.html.twig');
+        return $this->render('site/produits.html.twig');
     }
+
     /**
      * @Route("/Carriere", name="Carriere")
      */
     public function carriere(Request $request)
     {
-        return  $this->render('site/carrieres.html.twig');
+        return $this->render('site/carrieres.html.twig');
     }
 
     /**
      * @Route("/carriere_candidature", name="Carriere_candidature")
      */
-    public function carrierecandidature(Request $request)
+    public function carrierecandidature(Request $request, \Swift_Mailer $mail)
     {
-        $candidature =  new Candidature();
+        $candidature = new Candidature();
         $form = $this->createForm(CandidatureType::class, $candidature);
-        if ($request->isMethod('POST'))
-        {
+        if ($request->isMethod('POST')) {
             $form->handleRequest($request);
-            if($form->isValid())
-            {
+            if ($form->isValid()) {
 
                 $em = $this->getDoctrine()->getManager();
                 //$candidature->getCv()->upload($candidature);
@@ -173,12 +171,18 @@ class securityController extends AbstractController
                     //$candidature->getCv()->setUrl($fileName);
                     $em->persist($candidature);
                     $em->flush();
-                    $this->addFlash('notice', 'Candidature enregistrée avec succée');
+                    $message = (new \Swift_Message('Nouvelle Candidature'))
+                        ->setFrom('admin@globustrading-guinea.com')
+                        ->setTo('modadg@gmail.com')
+                        ->setBody("Bonjour vous venez d'avoir une nouvelle Candidature;<br> nom: ".$candidature->getNom()."<br> prenom: ".$candidature->getPrenom()."<br> date de naissance: ".date_format($candidature->getDatnaiss(),'d/d/Y')." <br> Lieu de naissance: ".$candidature->getLieunaiss()."<br> Domaine d'activite: ".$candidature->getActivite()."<br> Niveau d'etude: ".$candidature->getNiveau()." .<br> Son CV se trouve en piece jointe.", 'text/html')
+                        ->attach(\Swift_Attachment::fromPath($this->getParameter('upload_directory')."/".$newFilename));
+                    $mail->send($message);
+                    $this->addFlash('notice', 'Candidature enregistrée avec succés');
                     return $this->redirectToRoute('Carriere_candidature');
                 }
             }
         }
-        return  $this->render('site/carriere_candidature.html.twig',
+        return $this->render('site/carriere_candidature.html.twig',
             [
                 'form' => $form->createView(),
             ]);
@@ -190,7 +194,7 @@ class securityController extends AbstractController
      */
     public function offre(Request $request)
     {
-        return  $this->render('site/carriere_offres.html.twig');
+        return $this->render('site/carriere_offres.html.twig');
     }
 
     /**
@@ -198,7 +202,7 @@ class securityController extends AbstractController
      */
     public function culture(Request $request)
     {
-        return  $this->render('site/carriere_culture.html.twig');
+        return $this->render('site/carriere_culture.html.twig');
     }
 
     /**
@@ -207,9 +211,9 @@ class securityController extends AbstractController
     public function photo(Request $request)
     {
         $albums = $this->getDoctrine()->getRepository(Album::class)->findAll();
-        return  $this->render('site/galerie.html.twig',[
+        return $this->render('site/galerie.html.twig', [
             'albums' => $albums,
-            ]);
+        ]);
     }
 
     /**

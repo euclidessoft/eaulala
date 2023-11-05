@@ -2,7 +2,7 @@ swiftmailer:
     transport: smtp
     auth_mode: login
     port: 25
-    host: mail.jolofsoft.com
-    username: moda@jolofsoft.com
-    password: Moda2020
+    host: mail.globustrading-guinea.com
+    username: admin@globustrading-guinea.com
+    password: Moda!2023
     spool: { type: 'memory' }
