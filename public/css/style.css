@@ -1443,6 +1443,6 @@ textarea.form-control {
     .lang-button {
         position: absolute;
         right: 30%;
-        top: 0;
+        top: 20px;
     }
 }
