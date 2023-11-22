@@ -9,12 +9,11 @@
     <!-- Favicon -->
     <link href="{{ asset('images/eaulala.ico') }}" rel="icon">
 
-    <!-- Bootstrap CSS -->
+    <!-- Libraries CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-    {% block photobox_css %}
-    {% endblock %}
+    {% block photobox_css %} {% endblock %}
     <!-- Site CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
@@ -46,7 +45,7 @@
     </button>
 </nav>
 <audio id="myAudio" controls autoplay loop>
-    <source src="/images/son.mp3" type="audio/mpeg">
+    <source src="{{ asset('images/son.mp3')}}" type="audio/mpeg">
 </audio>
 <div  id="btnsound">
     <button type="button" class="mutesound"  title='deactiver le son' onclick="soundoff()">
