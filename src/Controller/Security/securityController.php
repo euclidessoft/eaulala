@@ -172,7 +172,7 @@ class securityController extends AbstractController
                     $em->persist($candidature);
                     $em->flush();
                     $message = (new \Swift_Message('Nouvelle Candidature'))
-                        ->setFrom('admin@globustrading-guinea.com')
+                        ->setFrom('support@alwayseaulala.com')
                         ->setTo('modadg@gmail.com')
                         ->setBody("Bonjour vous venez d'avoir une nouvelle Candidature;<br> nom: ".$candidature->getNom()."<br> prenom: ".$candidature->getPrenom()."<br> date de naissance: ".date_format($candidature->getDatnaiss(),'d/d/Y')." <br> Lieu de naissance: ".$candidature->getLieunaiss()."<br> Domaine d'activite: ".$candidature->getActivite()."<br> Niveau d'etude: ".$candidature->getNiveau()." .<br> Son CV se trouve en piece jointe.", 'text/html')
                         ->attach(\Swift_Attachment::fromPath($this->getParameter('upload_directory')."/".$newFilename));
@@ -210,9 +210,9 @@ class securityController extends AbstractController
      */
     public function photo(Request $request)
     {
-        $albums = $this->getDoctrine()->getRepository(Album::class)->findAll();
+//        $albums = $this->getDoctrine()->getRepository(Album::class)->findAll();
         return $this->render('site/galerie.html.twig', [
-            'albums' => $albums,
+//            'albums' => $albums,
         ]);
     }
 
